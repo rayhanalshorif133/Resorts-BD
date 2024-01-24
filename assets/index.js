@@ -1,6 +1,14 @@
 $(()=>{
     handleClickSearchDestination();
+    handleClickSelectDateRange();
 });
+
+const handleClickSelectDateRange = () => {
+    $(".checkDateRangeInput").click(function(e) {
+        $(".search_destination_main").addClass('hidden');
+        $(".select_date_form").removeClass('hidden');
+    });
+};
 
 const handleClickSearchDestination = () => {
     $(".search_destination").click(function () {
@@ -24,6 +32,7 @@ const handleClickSearchDestination = () => {
 
     $(".return_main_destination_form").click(function () {
         $(".search_destination_form").addClass('hidden');
+        $(".select_date_form").addClass('hidden');
         $(".search_destination_main").removeClass('hidden');
     });
 
