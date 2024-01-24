@@ -12,32 +12,32 @@
 
 <body>
   <!-- header:start -->
-  <nav class="shadow-md h-[80px]">
+  <nav class="shadow-md h-auto md:h-20">
     <div class="max-w-7xl mx-auto">
       <div class="flex justify-between">
-        <div class="flex space-x-12 py-2">
+        <div class="flex flex-col md:flex-row space-x-7 xl:space-x-12 py-2 mx-auto md:mx-0">
           <a href="./index.html">
             <img src="./assets/images/logo.png" alt="logo" class="w-40">
           </a>
-          <div class="flex space-x-16 py-3">
+          <div class="flex space-x-10 lg:space-x-12 xl:space-x-16 py-3">
             <a href="./resorts.html" class="flex flex-col mx-auto text-center cursor-pointer group relative">
               <i class="fa-solid fa-house text-[18px] group-hover:text-red-600"></i>
               <h3 class="group-hover:text-red-600 font-semibold mt-1">Resorts</h3>
-              <div class="h-[5px] w-0 group-hover:w-full transition-all duration-500 ease-in-out absolute bg-red-600 -bottom-[14px]"></div>
+              <div class="h-[5px] w-0 group-hover:w-full transition-all duration-500 ease-in-out absolute bg-red-600 -bottom-[20px] md:-bottom-[14px]"></div>
             </a>
             <a href="./boats.html" class="flex flex-col mx-auto text-center cursor-pointer group relative">
               <i class="fas fa-ship text-[18px] group-hover:text-red-600"></i>
               <h3 class="group-hover:text-red-600 font-semibold mt-1">Boats</h3>
-              <div class="h-[5px] w-0 group-hover:w-full transition-all duration-500 ease-in-out absolute bg-red-600 -bottom-[14px]"></div>
+              <div class="h-[5px] w-0 group-hover:w-full transition-all duration-500 ease-in-out absolute bg-red-600 -bottom-[20px] md:-bottom-[14px]"></div>
             </a>
             <a href="./ships.html" class="flex flex-col mx-auto text-center cursor-pointer group relative">
               <i class="fas fa-ship text-[18px] group-hover:text-red-600"></i>
               <h3 class="group-hover:text-red-600 font-semibold mt-1">Ships</h3>
-              <div class="h-[5px] w-0 group-hover:w-full transition-all duration-500 ease-in-out absolute bg-red-600 -bottom-[14px]"></div>
+              <div class="h-[5px] w-0 group-hover:w-full transition-all duration-500 ease-in-out absolute bg-red-600 -bottom-[20px] md:-bottom-[14px]"></div>
             </a>
           </div>
         </div>
-        <div class="flex items-center justify-center space-x-2">
+        <div class="hidden md:flex items-center justify-center space-x-2">
           <ul class="flex">
             <li class="mr-4 space-x-2">
               <a href="#" class="text-gray-600 transition-all duration-500 ease-in-out font-semibold hover:text-gray-800">
@@ -58,8 +58,12 @@
       </div>
     </div>
   </nav>
-
   <!-- header:end -->
+  <!-- footer:start -->
+  <footer class="md:hidden fixed bottom-0">
+    Hello Footer
+  </footer>
+  <!-- footer:end -->
 </body>
 
 </html>
