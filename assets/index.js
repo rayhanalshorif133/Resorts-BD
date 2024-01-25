@@ -5,13 +5,13 @@ $(() => {
 });
 
 const handleSlider = () => {
-    $('.owl-carousel').owlCarousel({
+   var slider =  $('.owl-carousel').owlCarousel({
         loop:true,
         margin:10,
         nav:true,
         responsive:{
             0:{
-                items:1
+                items:2
             },
             600:{
                 items:3
@@ -20,7 +20,15 @@ const handleSlider = () => {
                 items:3
             }
         }
-    })
+    });
+
+    $('.slide_left_btn').click(function() {
+        slider.trigger('next.owl.carousel');
+    });
+
+    $('.slide_right_btn').click(function() {
+        slider.trigger('prev.owl.carousel');
+    });
 };
 
 const handleClickSelectDateRange = () => {
