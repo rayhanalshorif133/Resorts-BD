@@ -5,36 +5,49 @@ $(() => {
 });
 
 const handleSlider = () => {
-   var slider =  $('.owl-carousel').owlCarousel({
-        loop:true,
-        margin:10,
-        nav:true,
-        responsive:{
-            0:{
-                items:2
-            },
-            600:{
-                items:3
-            },
-            1000:{
-                items:3
+
+    var owl_carousels = $('.owl-carousel');
+
+    owl_carousels.each(function (item) {
+        var sliderName = $(this).attr('data-slider-name');
+        $(this).addClass(sliderName);
+        var className = '.' + sliderName;
+        $(className).owlCarousel({
+            loop: true,
+            margin: 10,
+            nav: true,
+            responsive: {
+                0: {
+                    items: 2
+                },
+                600: {
+                    items: 3
+                },
+                1000: {
+                    items: 3
+                }
             }
-        }
+        });
+    });
+    
+    $('.slide_left_btn').click(function () {
+        var target = $(this).parent().attr('data-target');
+        target = '.' + target;
+        $(target).trigger('prev.owl.carousel');
     });
 
-    $('.slide_left_btn').click(function() {
-        slider.trigger('next.owl.carousel');
+    $('.slide_right_btn').click(function () {
+        var target = $(this).parent().attr('data-target');
+        target = '.' + target;
+        $(target).trigger('next.owl.carousel');
     });
 
-    $('.slide_right_btn').click(function() {
-        slider.trigger('prev.owl.carousel');
-    });
 };
 
 const handleClickSelectDateRange = () => {
     const currentDate = moment().format('MM/DD/YYYY');
     const after2Days = moment().add(2, 'days').format('MM/DD/YYYY');
-    
+
 
     function cb(start, end) {
         const startDate = moment(start).format(`DD MMM'YY`);
