@@ -9,6 +9,7 @@ module.exports = {
       colors: {
         'resort': '#173C6C',
         'resort-secondary': '#666666',
+        'resort-secondary-light': '#a7a7a7',
       },
     }
   },
