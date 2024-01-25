@@ -5,8 +5,8 @@ $(()=>{
 
 const handleClickSelectDateRange = () => {
     $(".checkDateRangeInput").click(function(e) {
-        $(".search_destination_main").addClass('hidden');
-        $(".select_date_form").removeClass('hidden');
+        // $(".search_destination_main").addClass('hidden');
+        // $(".select_date_form").removeClass('hidden');
     });
 };
 

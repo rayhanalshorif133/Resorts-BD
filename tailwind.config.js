@@ -7,7 +7,8 @@ module.exports = {
         'rubik': ['Rubik', 'sans-serif']
       },
       colors: {
-        'base': '#173C6C',
+        'resort': '#173C6C',
+        'resort-secondary': '#666666',
       },
     }
   },
