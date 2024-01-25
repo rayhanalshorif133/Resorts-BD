@@ -62,6 +62,38 @@
     .nav-icon .box i{
         @apply text-[12px] flex items-center justify-center mx-auto h-full;
     }
+
+    .header-account{
+        @apply mr-4 space-x-2 relative ;
+    }
+
+    .header-account .title{
+        @apply text-gray-600 text-sm transition-all duration-500 ease-in-out font-medium hover:text-gray-800;
+    }
+
+    .header-account .dropdown{
+        @apply absolute top-9 bg-white custom_box-shadow  transition-all duration-300 ease-in-out h-0 -left-[5.5rem];
+    }
+
+    .header-account .dropdown .icon{
+        @apply h-0 w-0 rounded-full border border-resort-secondary flex items-center justify-center ml-4;
+    }
+
+    .header-account .dropdown .icon i{
+        @apply transition-all duration-300 ease-in-out text-resort-secondary items-center justify-center h-auto w-auto ;
+    }
+
+    .header-account .dropdown .details{
+        @apply transition-all duration-500 ease-in-out space-x-2 cursor-pointer;
+    }
+
+    .header-account .dropdown .details i{
+        @apply  text-resort-secondary/30  duration-500 ease-in-out transition-all;
+    }
+
+    .header-account .dropdown .details h3{
+        @apply  text-sm font-normal font-rubik text-resort-secondary/80  duration-500 ease-in-out transition-all;
+    }
     
     .form-control {
         @apply block appearance-none w-full bg-white border border-gray-300 hover:border-gray-500 px-4 py-2 pr-8 rounded leading-tight focus:outline-none focus:border-blue-500 focus:ring cursor-pointer font-rubik text-[#333333];
