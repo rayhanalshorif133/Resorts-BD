@@ -94,6 +94,18 @@
     .header-account .dropdown .details h3{
         @apply  text-sm font-normal font-rubik text-resort-secondary/80  duration-500 ease-in-out transition-all;
     }
+
+    .header-account .dropdown .button-content{
+        @apply relative right-3  transition-all duration-500 ease-in-out space-x-1 justify-center w-full mx-auto;
+    }
+
+    .header-account .dropdown .button-content .login{
+        @apply flex items-center justify-center transition-all duration-500 ease-in-out bg-[#2e4c74] hover:bg-resort text-white font-rubik font-medium h-8 w-14 mx-auto mt-3 text-xs;
+    }
+
+    .header-account .dropdown .button-content .signUp{
+        @apply flex items-center justify-center transition-all duration-500 ease-in-out text-resort border-[2px] hover:bg-resort hover:text-white border-resort font-rubik font-medium h-8 w-16 mx-auto mt-3 text-xs;
+    }
     
     .form-control {
         @apply block appearance-none w-full bg-white border border-gray-300 hover:border-gray-500 px-4 py-2 pr-8 rounded leading-tight focus:outline-none focus:border-blue-500 focus:ring cursor-pointer font-rubik text-[#333333];
