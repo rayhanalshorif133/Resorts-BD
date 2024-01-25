@@ -1,7 +1,27 @@
 $(() => {
     handleClickSearchDestination();
     handleClickSelectDateRange();
+    handleSlider();
 });
+
+const handleSlider = () => {
+    $('.owl-carousel').owlCarousel({
+        loop:true,
+        margin:10,
+        nav:true,
+        responsive:{
+            0:{
+                items:1
+            },
+            600:{
+                items:3
+            },
+            1000:{
+                items:3
+            }
+        }
+    })
+};
 
 const handleClickSelectDateRange = () => {
     const currentDate = moment().format('MM/DD/YYYY');
@@ -29,8 +49,8 @@ const handleClickSelectDateRange = () => {
                 </div>
             </div>
         `;
-        // start.format('MMMM D, YYYY') + ' - ' + end.format('MMMM D, YYYY')
         $('#reportrange span').html(startSpan);
+        // $(document).find('.applyBtn').trigger('click');
     }
 
     $('#reportrange').daterangepicker({
