@@ -77,6 +77,8 @@ const handleClickSelectDateRange = () => {
     $('#reportrange').daterangepicker({
         currentDate: currentDate,
         after2Days: after2Days,
+        // remove appy btn
+        autoApply: true,
     }, cb);
 
     cb(currentDate, after2Days);
