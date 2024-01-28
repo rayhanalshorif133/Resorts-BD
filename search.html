@@ -15,10 +15,10 @@
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
   <link href="./src/output.css" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
-  <title>Resorts BD :: Home</title>
+  <title>Resorts BD :: Hotel Search</title>
 </head>
 
-<body>
+<body class="bg-[#EEEEEE]">
   <!-- header:start -->
   <nav class="nav">
     <div class="max-w-7xl mx-auto">
@@ -109,164 +109,55 @@
   <!-- header:end -->
   <!-- content:start -->
   <div class="max-w-7xl mx-auto min-h-screen">
-    <div class="grid grid-cols-1 md:grid-cols-12 gap-8 py-8 min-h-screen">
-      <div class="col-span-12 mx-5 md:col-span-5">
-        <div
-          class="bg-white h-auto pb-3 md:pb-0 md:h-full rounded-md border-l-2 mx-auto border-gray-300 custom_box-shadow w-full">
-          <form action="#"
-            class="mx-auto w-full px-5 py-3 transition-all duration-500 ease-in-out search_destination_main overflow-hidden">
-            <h2 class="py-2 text-lg text-[#333333] font-medium tracking-wide font-rubik">Book on Bangladesh's Largest
-              Hotel</h2>
-            <div class="space-y-10">
-              <div>
-                <h5 class="text-sm text-resort-secondary-light font-rubik">Destinations</h5>
-                <input type="text" name="destination"
-                  class="search_destination w-full border-b border-gray-300 px-2 py-2 mt-1 focus:outline-none focus:border-[#173C6C]"
-                  placeholder="Where are you going?">
-              </div>
-              <div id="reportrange">
-                <span class="space-y-7"></span>
+    <div class="grid grid-cols-4 gap-4 border-t-2 border-[#EEEEEE]">
+      <div class="col-span-1">
+        <div class="bg-white shadow-sm min-h-screen w-full">
+          <div class="py-10 px-5 space-y-4">
+            <!-- item 1 -->
+            <div>
+              <div class="border-b-[1px] border-[#E2E2E2] flex justify-between pb-1">
+                <h3 class="uppercase font-rubik text-xs text-stone-800 font-medium">Hotel Name</h3>
+                <button type="button"
+                  class="font-rubik text-resort-secondary-light uppercase font-normal text-2xs">Show</button>
+                <button type="button"
+                  class="hidden font-rubik text-resort-secondary-light uppercase font-normal text-2xs">Hide</button>
               </div>
             </div>
-            <div class="flex justify-end mt-14">
-              <button class="w-full md:px-4 py-2 text-white bg-resort hover:bg-[#32527b] rounded-md group">Search Hotels
-                <i
-                  class="fa-solid fa-arrow-right-long mx-1 group-hover:translate-x-4 duration-300 transition-all ease-in-out"></i></button>
-            </div>
-          </form>
-          <form action="#"
-            class="mx-auto w-full px-5 py-3 transition-all duration-500 ease-in-out hidden search_destination_form">
-            <div class="flex flex-col">
-              <div class="flex">
-                <div class="w-5 cursor-pointer return_main_destination_form">
-                  <i class="fa fa-arrow-left text-[#173C6C] text-sm mt-1"></i>
-                </div>
-                <h2 class="text-base text-[#333333] font-medium tracking-wide font-rubik text-center mx-auto">Select
-                  Destination</h2>
-              </div>
-              <h5 class="text-sm text-[#A7A7A7] font-rubik mt-2">Select City, Location or Hotel Name (Bangladesh)</h5>
-              <input type="text"
-                class="search_destination w-full border-b border-gray-300 px-2 py-2 mt-1 focus:outline-none focus:border-[#173C6C] font-semibold text-xl text-[#000000]"
-                placeholder="Enter a destination">
-              <div class="space-y-3 mt-5 destination_option_box">
-                <div class="py-3 bg-[#FAFBFD] px-2 rounded-sm cursor-pointer hover:bg-[#f0f5ff] destination_option">
-                  <option value="Bandarban" class="text-sm text-gray-600 font-rubik">Bandarban</option>
-                </div>
-                <div class="py-3 bg-[#FAFBFD] px-2 rounded-sm cursor-pointer hover:bg-[#f0f5ff] destination_option">
-                  <option value="Rangamati" class="text-sm text-gray-600 font-rubik">Rangamati</option>
-                </div>
-                <div class="py-3 bg-[#FAFBFD] px-2 rounded-sm cursor-pointer hover:bg-[#f0f5ff] destination_option">
-                  <option value="Kaptai" class="text-sm text-gray-600 font-rubik">Kaptai</option>
-                </div>
-                <div class="py-3 bg-[#FAFBFD] px-2 rounded-sm cursor-pointer hover:bg-[#f0f5ff] destination_option">
-                  <option value="Cox's Bazar" class="text-sm text-gray-600 font-rubik">Cox's Bazar</option>
-                </div>
-                <div class="py-3 bg-[#FAFBFD] px-2 rounded-sm cursor-pointer hover:bg-[#f0f5ff] destination_option">
-                  <option value="Saint Martin" class="text-sm text-gray-600 font-rubik">Saint Martin</option>
-                </div>
-                <div class="py-3 bg-[#FAFBFD] px-2 rounded-sm cursor-pointer hover:bg-[#f0f5ff] destination_option">
-                  <option value="Sylhet" class="text-sm text-gray-600 font-rubik">Sylhet</option>
-                </div>
+            <!-- item 2 -->
+            <div>
+              <div class="border-b-[1px] border-[#E2E2E2] flex justify-between pb-1">
+                <h3 class="uppercase font-rubik text-xs text-stone-800 font-medium">Deals</h3>
+                <button type="button"
+                  class="font-rubik text-resort-secondary-light uppercase font-normal text-2xs">Show</button>
+                <button type="button"
+                  class="hidden font-rubik text-resort-secondary-light uppercase font-normal text-2xs">Hide</button>
               </div>
             </div>
-          </form>
-        </div>
-      </div>
-      <div class="col-span-12 mx-5 md:col-span-7 space-y-4 mb-12">
-        <div class="h-24 w-full rounded-xl">
-          <img src="http://placehold.it/400x100" alt="banner" class="w-full h-full rounded-xl">
-        </div>
-        <div class="h-24 w-full flex">
-          <div class="w-1/2 h-full rounded-xl mr-2">
-            <img src="http://placehold.it/200x100" alt="banner" class="w-full h-full rounded-xl">
-          </div>
-          <div class="w-1/2 h-full rounded-xl ml-2">
-            <img src="http://placehold.it/200x100" alt="banner" class="w-full h-full rounded-xl">
-          </div>
-        </div>
-        <div class="h-24 w-full rounded-xl">
-          <img src="http://placehold.it/400x100" alt="banner" class="w-full h-full rounded-xl">
-        </div>
-        <div class="slider">
-          <div class="flex justify-between">
-            <div class="flex">
-              <div>
-                <h5>Hotel Discounts For You</h5>
-              </div>
-              <div><a href="#">View All</a></div>
-            </div>
-            <div class="flex space-x-4 py-2" data-target="heloo">
-              <div class="slide_left_btn h-7 w-7 bg-gray-500 cursor-pointer flex justify-center items-center"><i
-                  class="fa-solid fa-angle-left text-white flex justify-center items-center"></i></div>
-              <div class="slide_right_btn h-7 w-7 bg-gray-500 cursor-pointer flex justify-center items-center"><i
-                  class="fa-solid fa-chevron-right text-white flex justify-center items-center"></i></div>
-            </div>
-          </div>
-          <div class="owl-carousel owl-theme" data-slider-name="heloo">
-            <div class="item">
-              <div class="bg-[#d6e0d1] h-64 w-44 relative mx-3">
-                <div class="absolute h-6 w-12 bg-green-500 -left-2 top-2 px-3"><span class="text-white font-semibold">50%</span></div>
-                <div class="absolute h-6 w-7 bg-green-500 -left-1 top-[16px] rotate-[30deg] -z-50"></div>
+            <!-- item 3 -->
+            <div>
+              <div class="border-b-[1px] border-[#E2E2E2] flex justify-between pb-1">
+                <h3 class="uppercase font-rubik text-xs text-stone-800 font-medium">Price For 2 nights</h3>
+                <button type="button"
+                  class="font-rubik text-resort-secondary-light uppercase font-normal text-2xs">Show</button>
+                <button type="button"
+                  class="hidden font-rubik text-resort-secondary-light uppercase font-normal text-2xs">Hide</button>
               </div>
             </div>
-            <div class="item">
-              <div class="bg-[#d6e0d1] h-64 w-44 relative mx-3">
-                <div class="absolute h-6 w-12 bg-red-500 -left-2 top-2 px-3"><span class="text-white font-semibold">50%</span></div>
-                <div class="absolute h-6 w-7 bg-red-500 -left-1 top-[16px] rotate-[30deg] -z-50"></div>
+            <!-- item 4 -->
+            <div>
+              <div class="border-b-[1px] border-[#E2E2E2] flex justify-between pb-1">
+                <h3 class="uppercase font-rubik text-xs text-stone-800 font-medium">City</h3>
+                <button type="button"
+                  class="font-rubik text-resort-secondary-light uppercase font-normal text-2xs">Show</button>
+                <button type="button"
+                  class="hidden font-rubik text-resort-secondary-light uppercase font-normal text-2xs">Hide</button>
               </div>
             </div>
-            <div class="item">
-              <div class="bg-[#d6e0d1] h-64 w-44 relative mx-3">
-                <div class="absolute h-6 w-12 bg-green-500 -left-2 top-2 px-3"><span class="text-white font-semibold">50%</span></div>
-                <div class="absolute h-6 w-7 bg-green-500 -left-1 top-[16px] rotate-[30deg] -z-50"></div>
-              </div>
-            </div>
-          </div>
-        </div>
 
-        <div class="slider">
-          <div class="flex justify-between">
-            <div class="flex">
-              <div>
-                <h5>Hotel Discounts For You</h5>
-              </div>
-              <div><a href="#">View All</a></div>
-            </div>
-            <div class="flex space-x-4 py-2" data-target="number_2">
-              <div class="slide_left_btn h-7 w-7 bg-gray-500 cursor-pointer flex justify-center items-center"><i
-                  class="fa-solid fa-angle-left text-white flex justify-center items-center"></i></div>
-              <div class="slide_right_btn h-7 w-7 bg-gray-500 cursor-pointer flex justify-center items-center"><i
-                  class="fa-solid fa-chevron-right text-white flex justify-center items-center"></i></div>
-            </div>
-          </div>
-          <div class="owl-carousel owl-theme" data-slider-name="number_2">
-            <div class="item">
-              <div class="bg-[#d6e0d1] h-64 w-44 relative mx-3">
-                <div class="absolute h-6 w-auto bg-green-500 -left-2 top-2 px-3"><span class="text-white font-semibold">Hello World</span></div>
-                <div class="absolute h-6 w-7 bg-green-500 -left-1 top-[16px] rotate-[30deg] -z-50"></div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="bg-[#d6e0d1] h-64 w-44 relative mx-3">
-                <div class="absolute h-6 w-auto bg-red-500 -left-2 top-2 px-3"><span class="text-white font-semibold">50%</span></div>
-                <div class="absolute h-6 w-7 bg-red-500 -left-1 top-[16px] rotate-[30deg] -z-50"></div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="bg-[#d6e0d1] h-64 w-44 relative mx-3">
-                <div class="absolute h-6 w-auto bg-resort -left-2 top-2 px-3"><span class="text-white font-semibold">50%</span></div>
-                <div class="absolute h-6 w-7 bg-resort -left-1 top-[16px] rotate-[30deg] -z-50"></div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="bg-[#d6e0d1] h-64 w-44 relative mx-3">
-                <div class="absolute h-6 w-auto bg-green-500 -left-2 top-2 px-3"><span class="text-white font-semibold">50%</span></div>
-                <div class="absolute h-6 w-7 bg-green-500 -left-1 top-[16px] rotate-[30deg] -z-50"></div>
-              </div>
-            </div>
           </div>
         </div>
       </div>
+      <div class="col-span-3">04</div>
     </div>
   </div>
   <!-- content:End -->
@@ -285,7 +176,8 @@
         <i class="fa-solid fa-user text-[18px] group-hover:text-red-600"></i>
         <h3
           class="group-hover:text-gray-100 text-white text-sm font-semibold bg-gradient-to-r from-[#AA243D] to-[#50264C] px-2 rounded-md py-0">
-          Login</h3>
+          Login
+        </h3>
       </a>
       <a href="./contact_us.html" class="mx-auto text-center group">
         <i class="fa-solid fa-comments text-[18px] group-hover:text-red-600"></i>

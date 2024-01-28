@@ -32,7 +32,7 @@
 
 @layer components {
     .nav{
-        @apply shadow-md h-auto md:h-[4.2rem] sticky top-0 bg-white;
+        @apply shadow-sm h-auto md:h-[4.2rem] sticky top-0 bg-white;
     }
 
     .nav-icon{

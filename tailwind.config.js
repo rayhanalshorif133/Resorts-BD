@@ -11,6 +11,10 @@ module.exports = {
         'resort-secondary': '#666666',
         'resort-secondary-light': '#a7a7a7',
       },
+      fontSize: {
+        '2xs': '10px',
+        '3xs': '8px',
+      },
     }
   },
   plugins: [],
