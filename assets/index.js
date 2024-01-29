@@ -2,6 +2,7 @@ $(() => {
     handleClickSearchDestination();
     handleClickSelectDateRange();
     handleSlider();
+    handleSearchSideBarItems();
 });
 
 const handleSlider = () => {
@@ -116,5 +117,13 @@ const handleClickSearchDestination = () => {
         $(".search_destination_main").removeClass('hidden');
         const value = $(this).find('option').val();
         $(".search_destination").val(value).addClass('text-xl font-semibold');
+    });
+};
+
+const handleSearchSideBarItems = () => {
+    $(".showHideBtn").click(function () {
+        var isShowOrHide = $(this).text();
+        $(this).text(isShowOrHide == 'Show' ? 'Hide' : 'Show');
+        $(this).parent().next().toggleClass('hidden');
     });
 };

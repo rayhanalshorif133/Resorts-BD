@@ -114,13 +114,18 @@
         <div class="bg-white shadow-sm min-h-screen w-full">
           <div class="py-10 px-5 space-y-4">
             <!-- item 1 -->
-            <div>
-              <div class="border-b-[1px] border-[#E2E2E2] flex justify-between pb-1">
+            <div class="border-b-[1px] border-[#E2E2E2]">
+              <div class="flex justify-between py-2">
                 <h3 class="uppercase font-rubik text-xs text-stone-800 font-medium">Hotel Name</h3>
                 <button type="button"
-                  class="font-rubik text-resort-secondary-light uppercase font-normal text-2xs">Show</button>
-                <button type="button"
-                  class="hidden font-rubik text-resort-secondary-light uppercase font-normal text-2xs">Hide</button>
+                  class="font-rubik text-resort-secondary-light uppercase font-normal text-2xs showHideBtn">Hide</button>
+              </div>
+              <div class="w-full relative pb-2 hidden_item">
+                <input type="text" class="relative w-full border border-gray-300 focus:outline-none focus:border-[#8eb5e4] 
+                custom_focus font-rubik rounded-sm py-[5px] px-2 text-sm" />
+                <div class="absolute top-[5px] right-2">
+                  <i class="fa-solid fa-magnifying-glass text-gray-400"></i>
+                </div>
               </div>
             </div>
             <!-- item 2 -->
@@ -128,9 +133,7 @@
               <div class="border-b-[1px] border-[#E2E2E2] flex justify-between pb-1">
                 <h3 class="uppercase font-rubik text-xs text-stone-800 font-medium">Deals</h3>
                 <button type="button"
-                  class="font-rubik text-resort-secondary-light uppercase font-normal text-2xs">Show</button>
-                <button type="button"
-                  class="hidden font-rubik text-resort-secondary-light uppercase font-normal text-2xs">Hide</button>
+                  class="font-rubik text-resort-secondary-light uppercase font-normal text-2xs showHideBtn">Hide</button>
               </div>
             </div>
             <!-- item 3 -->
@@ -138,9 +141,7 @@
               <div class="border-b-[1px] border-[#E2E2E2] flex justify-between pb-1">
                 <h3 class="uppercase font-rubik text-xs text-stone-800 font-medium">Price For 2 nights</h3>
                 <button type="button"
-                  class="font-rubik text-resort-secondary-light uppercase font-normal text-2xs">Show</button>
-                <button type="button"
-                  class="hidden font-rubik text-resort-secondary-light uppercase font-normal text-2xs">Hide</button>
+                  class="font-rubik text-resort-secondary-light uppercase font-normal text-2xs showHideBtn">Hide</button>
               </div>
             </div>
             <!-- item 4 -->
@@ -148,9 +149,7 @@
               <div class="border-b-[1px] border-[#E2E2E2] flex justify-between pb-1">
                 <h3 class="uppercase font-rubik text-xs text-stone-800 font-medium">City</h3>
                 <button type="button"
-                  class="font-rubik text-resort-secondary-light uppercase font-normal text-2xs">Show</button>
-                <button type="button"
-                  class="hidden font-rubik text-resort-secondary-light uppercase font-normal text-2xs">Hide</button>
+                  class="font-rubik text-resort-secondary-light uppercase font-normal text-2xs showHideBtn">Hide</button>
               </div>
             </div>
 
