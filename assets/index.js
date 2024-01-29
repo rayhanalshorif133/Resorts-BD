@@ -3,6 +3,7 @@ $(() => {
     handleClickSelectDateRange();
     handleSlider();
     handleSearchSideBarItems();
+    checkBoxHandler();
 });
 
 const handleSlider = () => {
@@ -125,5 +126,19 @@ const handleSearchSideBarItems = () => {
         var isShowOrHide = $(this).text();
         $(this).text(isShowOrHide == 'Show' ? 'Hide' : 'Show');
         $(this).parent().next().toggleClass('hidden');
+    });
+};
+
+const checkBoxHandler = () => {
+    // type="checkbox"
+    $(document).on('click', '.checkbox', function () {
+        const input = $(this).find('input[type="checkbox"]');
+        input.prop('checked') ? input.prop('checked', false) : input.prop('checked', true);
+    });
+
+    $(document).on('click', '.star_search', function (e) {
+        const isFindHidden = $(this).find(".hidden");
+        const len = isFindHidden.length;
+        len > 0 ? $(this).find(".hidden").removeClass('hidden') : $(this).find("div").addClass('hidden');
     });
 };
