@@ -4,7 +4,20 @@ $(() => {
     handleSlider();
     handleSearchSideBarItems();
     checkBoxHandler();
+    handleOwlCarouselHover();
 });
+
+const handleOwlCarouselHover = () => {
+    $(".owl_carousel_Hover").hover(function () {
+        $(".showBtnOwlCarouselHoverBtn").removeClass('hidden').addClass('flex');
+    });
+
+    $(".owl_carousel_Hover").mouseleave(function () {
+        setTimeout(() => {
+            $(".showBtnOwlCarouselHoverBtn").removeClass('flex').addClass('hidden');
+        }, 3000);
+    });
+};
 
 const handleSlider = () => {
 
@@ -12,21 +25,30 @@ const handleSlider = () => {
 
     owl_carousels.each(function (item) {
         var sliderName = $(this).attr('data-slider-name');
+        var item_small = $(this).attr('data-item_small');
+        var item_medium = $(this).attr('data-item_medium');
+        var item_large = $(this).attr('data-item_large');
+
+        item_small? item_small = item_small : item_small = 1;
+        item_medium? item_medium = item_medium : item_medium = 2;
+        item_large? item_large = item_large : item_large = 3;
+
         $(this).addClass(sliderName);
         var className = '.' + sliderName;
         $(className).owlCarousel({
             loop: true,
             margin: 10,
-            nav: true,
+            autoplay: true,
+            nav: false,
             responsive: {
                 0: {
-                    items: 2
+                    items: item_small
                 },
                 600: {
-                    items: 3
+                    items: item_medium
                 },
                 1000: {
-                    items: 3
+                    items: item_large
                 }
             }
         });
