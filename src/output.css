@@ -1526,6 +1526,18 @@ input[type="range"]::-ms-fill-lower {
   height: 100%;
 }
 
+.h-44 {
+  height: 11rem;
+}
+
+.h-\[215px\] {
+  height: 215px;
+}
+
+.h-\[212px\] {
+  height: 212px;
+}
+
 .max-h-full {
   max-height: 100%;
 }
@@ -1597,6 +1609,14 @@ input[type="range"]::-ms-fill-lower {
 
 .w-full {
   width: 100%;
+}
+
+.w-48 {
+  width: 12rem;
+}
+
+.w-\[215px\] {
+  width: 215px;
 }
 
 .max-w-2xl {
@@ -1897,6 +1917,11 @@ input[type="range"]::-ms-fill-lower {
 .bg-\[\#173C6C\] {
   --tw-bg-opacity: 1;
   background-color: rgb(23 60 108 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#32609c\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(50 96 156 / var(--tw-bg-opacity));
 }
 
 .bg-\[\#D9E8E5\]\/50 {
