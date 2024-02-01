@@ -54,6 +54,7 @@ const handleSlider = () => {
             margin: 10,
             autoplay: true,
             nav: false,
+            autoplayTimeout: 3000,
             responsive: {
                 0: {
                     items: item_small
@@ -66,6 +67,8 @@ const handleSlider = () => {
                 }
             }
         });
+
+        $('.owl-dots').addClass('hidden');
     });
     
     $('.slide_left_btn').click(function () {
