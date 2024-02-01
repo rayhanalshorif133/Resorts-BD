@@ -5,7 +5,21 @@ $(() => {
     handleSearchSideBarItems();
     checkBoxHandler();
     handleOwlCarouselHover();
+    handleFooterBtn();
 });
+
+const handleFooterBtn = () => {
+    $(".pc_footer button").click(function () {
+        $(".pc_footer button").removeClass("border-b-2");
+        // $(".pc_footer button").find('span').removeClass("text-resort font-medium");
+        // $(".pc_footer button").find('i').removeClass("fa-sort-down mt-1 mb-1").addClass("mt-1 fa-sort-up");
+        $(this).toggleClass("border-b-2");
+        // $(this).find('span').toggleClass("text-resort font-medium");
+        // $(this).find('i').toggleClass("fa-sort-up fa-sort-down mt-1 mb-1");
+        
+        $('.pc_footer_content').find('.company_information').toggleClass('hidden h-0 h-auto');
+    });
+}
 
 const handleOwlCarouselHover = () => {
     $(".owl_carousel_Hover").hover(function () {
