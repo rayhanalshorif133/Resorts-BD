@@ -19,7 +19,6 @@ module.exports = {
     }
   },
   plugins: [
-    require('flowbite/plugin'),
     "./node_modules/flowbite/**/*.js",
   ],
   
