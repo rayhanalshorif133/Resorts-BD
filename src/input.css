@@ -62,6 +62,9 @@
 
 
 @layer components {
+
+    
+
     .nav{
         @apply shadow-sm h-auto md:h-[4.2rem] sticky top-0 bg-white z-50;
     }
