@@ -146,6 +146,16 @@
         @apply text-xs font-rubik text-[#666666] hover:text-resort font-normal tracking-wider flex items-center justify-center space-x-2;
     }
 
+
+    /* auth buttons */
+    .authActiveBtn{
+        @apply  py-2 text-white font-rubik text-sm font-normal cursor-pointer  bg-resort px-4;
+    }
+
+    .authInactiveBtn{
+        @apply  py-2 text-resort hover:bg-resort hover:text-white duration-300 ease-in-out transition-all font-rubik text-sm font-normal cursor-pointer border-resort border px-4;
+    }
+
     
     
 }

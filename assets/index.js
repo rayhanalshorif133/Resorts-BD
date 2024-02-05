@@ -6,7 +6,25 @@ $(() => {
     checkBoxHandler();
     handleOwlCarouselHover();
     handleFooterBtn();
+    handleAuthForm();
 });
+
+const handleAuthForm = () => {
+    $(".authBtn").click(function () {
+        const target = $(this).attr('data-target');
+        $(".authBtn").removeClass('authActiveBtn authInactiveBtn').addClass('authInactiveBtn');
+        $(this).addClass('authActiveBtn').removeClass('authInactiveBtn');
+        if(target === 'signIn'){
+            $(".signUp").addClass('hidden');
+            $(".signIn").removeClass('hidden');
+            $(".signUpBtn").removeClass('authActiveBtn');
+        }else{
+            $(".signIn").addClass('hidden');
+            $(".signUp").removeClass('hidden');
+            $(".signInBtn").removeClass('authActiveBtn');
+        }        
+    });
+};
 
 const handleFooterBtn = () => {
     $(".pc_footer button").click(function () {

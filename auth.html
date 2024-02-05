@@ -118,9 +118,81 @@
   <!-- content:start -->
   <div class="max-w-7xl mx-auto min-h-screen">
     <div class="py-5 w-full mx-auto justify-center">
-      <h3 class="border-dashed border-b-2 mx-auto w-fit border-resort-secondary py-2 font-rubik text-xl uppercase font-medium text-resort text-center group">
+      <h3
+        class="border-dashed border-b-2 mx-auto w-fit border-resort-secondary py-2 font-rubik text-xl uppercase font-medium text-resort text-center group">
         SIGN IN TO START YOUR SESSION
       </h3>
+    </div>
+    <div class="border p-5 mb-10 border-gray-400 shadow-sm  mx-auto justify-center w-fit">
+      <div class="flex space-x-4 mx-auto justify-center">
+        <button data-target="signIn" class="authBtn authActiveBtn">
+          Sign In
+        </button>
+        <button data-target="signUp"
+          class="authBtn authInactiveBtn">
+          Sign Up
+        </button>
+      </div>
+      <div class="mx-auto justify-center">
+        <div class="signIn my-2 mx-auto justify-center">
+          <h5 class="font-rubik text-center mx-auto text-resort font-normal py-2 border-b border-resort">Sign In Here</h5>
+          <form class="w-[20.5rem] h-auto mx-auto py-2" action="#">
+            <div>
+              <label class="font-rubik text-resort font-normal text-sm" for="login_email">Email</label>
+              <input type="email" class="w-full h-10 border border-gray-400 rounded-md px-3" id="login_email" name="login_email"
+                placeholder="Enter your email">
+            </div>
+            <div>
+              <label class="font-rubik text-resort font-normal text-sm" for="login_password">Password</label>
+              <input type="password" class="w-full h-10 border border-gray-400 rounded-md px-3" id="login_password"
+                name="login_password" placeholder="Enter your password">
+            </div>
+            <div class="flex justify-between items-center py-2">
+              <div class="flex items-center">
+                <input type="checkbox" class="h-4 w-4 rounded-md border border-gray-400" id="remember" name="remember">
+                <label class="font-rubik text-resort font-normal text-sm px-2" for="remember">Remember me</label>
+              </div>
+              <a href="#" class="font-rubik text-resort font-normal text-sm">Forgot Password?</a>
+            </div>
+            <div class="flex justify-center">
+              <button type="submit"
+                class="w-full h-10 bg-resort text-white font-rubik font-normal text-sm rounded-md cursor-pointer">Sign
+                In</button>
+            </div>
+          </form>
+        </div>
+        <div class="signUp hidden my-2 mx-auto justify-center">
+          <h5 class="font-rubik text-center mx-auto text-resort py-2 border-b border-resort font-normal">Sign Up Here</h5>
+          <form class="w-full h-auto mx-auto py-2" action="#">
+            <div>
+              <label class="font-rubik text-resort font-normal text-sm" for="email">Email</label>
+              <input type="email" class="w-full h-10 border border-gray-400 rounded-md px-3" id="email" name="email"
+                placeholder="Enter your email">
+            </div>
+            <div>
+              <label class="font-rubik text-resort font-normal text-sm" for="password">Password</label>
+              <input type="password" class="w-full h-10 border border-gray-400 rounded-md px-3" id="password"
+                name="password" placeholder="Enter your password">
+            </div>
+            <div>
+              <label class="font-rubik text-resort font-normal text-sm" for="confirmPassword">Confirm Password</label>
+              <input type="password" class="w-full h-10 border border-gray-400 rounded-md px-3" id="confirmPassword"
+                name="confirmPassword" placeholder="Enter your password">
+            </div>
+            <!-- phone -->
+            <div>
+              <label class="font-rubik text-resort font-normal text-sm" for="phone">Phone</label>
+              <input type="text" class="w-full h-10 border border-gray-400 rounded-md px-3" id="phone" name="phone"
+                placeholder="Enter your phone">
+            </div>
+            <div class="flex justify-center py-2">
+              <button type="submit"
+                class="w-full h-10 bg-resort text-white font-rubik font-normal text-sm rounded-md cursor-pointer">Sign
+                In</button>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
     <div
       class="w-full hidden h-auto xl:h-48 px-5 md:flex flex-col sm:flex-row bg-[#f4f4f4] border border-[#f6f6f6] shadow-sm hover:shadow-lg">
