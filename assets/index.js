@@ -1,11 +1,50 @@
 $(() => {
+    handleAutoInculdeFiles();
     handleClickSearchDestination();
     handleClickSelectDateRange();
     handleSlider();
     handleSearchSideBarItems();
     checkBoxHandler();
     handleOwlCarouselHover();
+    handleFooterBtn();
+    handleAuthForm();
 });
+
+const handleAutoInculdeFiles = () => {
+    $("#nav_bar_content").load("./components/nav_bar_content.html");
+    $("#footer_for_pc").load("./components/footer_for_pc.html");
+    $("#footer_for_mobile").load("./components/footer_for_mobile.html");
+};
+
+const handleAuthForm = () => {
+    $(".authBtn").click(function () {
+        const target = $(this).attr('data-target');
+        $(".authBtn").removeClass('authActiveBtn authInactiveBtn').addClass('authInactiveBtn');
+        $(this).addClass('authActiveBtn').removeClass('authInactiveBtn');
+        if (target === 'signIn') {
+            $(".signUp").addClass('hidden');
+            $(".signIn").removeClass('hidden');
+            $(".signUpBtn").removeClass('authActiveBtn');
+        } else {
+            $(".signIn").addClass('hidden');
+            $(".signUp").removeClass('hidden');
+            $(".signInBtn").removeClass('authActiveBtn');
+        }
+    });
+};
+
+const handleFooterBtn = () => {
+    $(".pc_footer button").click(function () {
+        $(".pc_footer button").removeClass("border-b-2");
+        // $(".pc_footer button").find('span').removeClass("text-resort font-medium");
+        // $(".pc_footer button").find('i').removeClass("fa-sort-down mt-1 mb-1").addClass("mt-1 fa-sort-up");
+        $(this).toggleClass("border-b-2");
+        // $(this).find('span').toggleClass("text-resort font-medium");
+        // $(this).find('i').toggleClass("fa-sort-up fa-sort-down mt-1 mb-1");
+
+        $('.pc_footer_content').find('.company_information').toggleClass('hidden h-0 h-auto');
+    });
+}
 
 const handleOwlCarouselHover = () => {
     $(".owl_carousel_Hover").hover(function () {
@@ -29,9 +68,9 @@ const handleSlider = () => {
         var item_medium = $(this).attr('data-item_medium');
         var item_large = $(this).attr('data-item_large');
 
-        item_small? item_small = item_small : item_small = 1;
-        item_medium? item_medium = item_medium : item_medium = 2;
-        item_large? item_large = item_large : item_large = 3;
+        item_small ? item_small = item_small : item_small = 1;
+        item_medium ? item_medium = item_medium : item_medium = 2;
+        item_large ? item_large = item_large : item_large = 3;
 
         $(this).addClass(sliderName);
         var className = '.' + sliderName;
@@ -40,6 +79,7 @@ const handleSlider = () => {
             margin: 10,
             autoplay: true,
             nav: false,
+            autoplayTimeout: 3000,
             responsive: {
                 0: {
                     items: item_small
@@ -52,8 +92,10 @@ const handleSlider = () => {
                 }
             }
         });
+
+        $('.owl-dots').addClass('hidden');
     });
-    
+
     $('.slide_left_btn').click(function () {
         var target = $(this).parent().attr('data-target');
         target = '.' + target;

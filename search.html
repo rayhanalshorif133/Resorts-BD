@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
     rel="stylesheet">
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css"  rel="stylesheet" /> 
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
 
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
@@ -95,8 +95,8 @@
                   </div>
                 </div>
                 <div class="button-content group-hover/account:flex hidden">
-                  <a href="./login.html" class="login">Login</a>
-                  <a href="./login.html" class="signUp">Sign Up</a>
+                  <a href="./auth.html" class="login">Login</a>
+                  <a href="./auth.html" class="signUp">Sign Up</a>
                 </div>
               </div>
             </li>
@@ -115,12 +115,13 @@
       </div>
     </div>
   </nav>
+
   <!-- header:end -->
   <!-- content:start -->
   <div class="max-w-7xl mx-auto min-h-screen">
     <div class="grid grid-cols-4 gap-4 border-t-2 border-[#EEEEEE]">
       <div class="col-span-1 hidden xl:block">
-        <div class="bg-white shadow-sm min-h-screen w-full">
+        <div class="bg-white shadow-sm min-h-screen w-[19rem] xl:fixed xl:top-20">
           <div class="py-10 px-5 space-y-4">
             <!-- item 1 -->
             <div class="border-b-[1px] border-[#E2E2E2]">
@@ -293,6 +294,7 @@
           </div>
         </div>
       </div>
+
       <div class="col-span-4 px-10 xl:px-0 xl:col-span-3 py-2">
         <div class="mx-auto w-full justify-center">
           <p class="text-center text-[#333333] font-rubik text-sm">Goa</p>
@@ -304,14 +306,188 @@
             <span>2 adults |</span>
           </p>
         </div>
+        <!-- xl:hidden -->
+        <div class="xl:hidden col-span-4 w-full px-10 py-3 mt-2  bg-white flex shadow-sm">
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-4 w-full">
+            <!-- item 1 -->
+            <div>
+                <div class="flex justify-between pb-1">
+                  <h3 class="uppercase font-rubik text-xs text-stone-800 font-medium">Hotel Name</h3>
+                  <button type="button"
+                    class="font-rubik text-resort-secondary-light uppercase font-normal text-2xs showHideBtn">Show</button>
+                </div>
+                <div class="w-full relative pb-2 hidden">
+                  <input type="text" class="relative w-full border border-gray-300 focus:outline-none focus:border-[#8eb5e4] 
+                  custom_focus font-rubik rounded-sm py-[5px] px-2 text-sm bg-[#F7F7F7]" />
+                  <div class="absolute top-[5px] right-2">
+                    <i class="fa-solid fa-magnifying-glass text-gray-400"></i>
+                  </div>
+                </div>
+            </div>
+             <!-- item 2 -->
+             <div>
+              <div class="flex justify-between pb-1">
+                <h3 class="uppercase font-rubik text-xs text-stone-800 font-medium">Price For 2 nights</h3>
+                <button type="button"
+                  class="font-rubik text-resort-secondary-light uppercase font-normal text-2xs showHideBtn">Show</button>
+              </div>
+              <div class="hidden">
+                <!-- sub item 1 -->
+                <div class="w-full pb-2 flex space-x-3 py-2">
+                  <div class="relative checkbox cursor-pointer flex items-center">
+                    <input type="checkbox" class="border border-gray-300 appearance-none indeterminate:bg-[#F7F7F7]
+                       checked:bg-resort h-4 w-4 cursor-pointer" />
+                    <span class="absolute -top-[5px] left-[3px]">
+                      <i class="fa-solid fa-check text-white text-[12px]"></i>
+                    </span>
+                  </div>
+                  <p class="text-xs font-rubik font-normal text-[#333333]">Rs. 1,001 to Rs. 2,000
+                    <span class="text-[#999999] mx-1">0</span>
+                  </p>
+                </div>
+                <!-- sub item 2 -->
+                <div class="w-full pb-2 flex space-x-3 py-2">
+                  <div class="relative checkbox cursor-pointer flex items-center">
+                    <input type="checkbox" class="border border-gray-300 appearance-none indeterminate:bg-[#F7F7F7]
+                       checked:bg-resort h-4 w-4 cursor-pointer" />
+                    <span class="absolute -top-[5px] left-[3px]">
+                      <i class="fa-solid fa-check text-white text-[12px]"></i>
+                    </span>
+                  </div>
+                  <p class="text-xs font-rubik font-normal text-[#333333]">Rs. 2,0001 to Rs. 3,000
+                    <span class="text-[#999999] mx-1">10</span>
+                  </p>
+                </div>
+                <!-- sub item 3 -->
+                <div class="w-full pb-2 flex space-x-3 py-2">
+                  <div class="relative checkbox cursor-pointer flex items-center">
+                    <input type="checkbox" class="border border-gray-300 appearance-none indeterminate:bg-[#F7F7F7]
+                       checked:bg-resort h-4 w-4 cursor-pointer" />
+                    <span class="absolute -top-[5px] left-[3px]">
+                      <i class="fa-solid fa-check text-white text-[12px]"></i>
+                    </span>
+                  </div>
+                  <p class="text-xs font-rubik font-normal text-[#333333]">Rs. 3,001 to Rs. 4,000
+                    <span class="text-[#999999] mx-1">10</span>
+                  </p>
+                </div>
+                <!-- sub item 4 -->
+                <div class="w-full pb-2 flex space-x-3 py-2">
+                  <div class="relative checkbox cursor-pointer flex items-center">
+                    <input type="checkbox" class="border border-gray-300 appearance-none indeterminate:bg-[#F7F7F7]
+                       checked:bg-resort h-4 w-4 cursor-pointer" />
+                    <span class="absolute -top-[5px] left-[3px]">
+                      <i class="fa-solid fa-check text-white text-[12px]"></i>
+                    </span>
+                  </div>
+                  <p class="text-xs font-rubik font-normal text-[#333333]">Rs. 4,001 to Rs. 5,000
+                    <span class="text-[#999999] mx-1">10</span>
+                  </p>
+                </div>
+                <!-- sub item 5 -->
+                <div class="w-full pb-2 flex space-x-3 py-2">
+                  <div class="relative checkbox cursor-pointer flex items-center">
+                    <input type="checkbox" class="border border-gray-300 appearance-none indeterminate:bg-[#F7F7F7]
+                       checked:bg-resort h-4 w-4 cursor-pointer" />
+                    <span class="absolute -top-[5px] left-[3px]">
+                      <i class="fa-solid fa-check text-white text-[12px]"></i>
+                    </span>
+                  </div>
+                  <p class="text-xs font-rubik font-normal text-[#333333]">Rs. 5,001 to Rs. 6,000
+                    <span class="text-[#999999] mx-1">10</span>
+                  </p>
+                </div>
+                <!-- sub item 6 -->
+                <div class="w-full pb-2 flex space-x-3 py-2">
+                  <div class="relative checkbox cursor-pointer flex items-center">
+                    <input type="checkbox" class="border border-gray-300 appearance-none indeterminate:bg-[#F7F7F7]
+                       checked:bg-resort h-4 w-4 cursor-pointer" />
+                    <span class="absolute -top-[5px] left-[3px]">
+                      <i class="fa-solid fa-check text-white text-[12px]"></i>
+                    </span>
+                  </div>
+                  <p class="text-xs font-rubik font-normal text-[#333333]">Rs. 6,001 to Rs. 7,000
+                    <span class="text-[#999999] mx-1">20</span>
+                  </p>
+                </div>
+                <!-- sub item 7 -->
+                <div class="w-full pb-2 flex space-x-3 py-2">
+                  <div class="relative checkbox cursor-pointer flex items-center">
+                    <input type="checkbox" class="border border-gray-300 appearance-none indeterminate:bg-[#F7F7F7]
+                       checked:bg-resort h-4 w-4 cursor-pointer" />
+                    <span class="absolute -top-[5px] left-[3px]">
+                      <i class="fa-solid fa-check text-white text-[12px]"></i>
+                    </span>
+                  </div>
+                  <p class="text-xs font-rubik font-normal text-[#333333]">Greater than Rs. 7,001
+                    <span class="text-[#999999] mx-1">202</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- item 3 -->
+            <div>
+              <div class=" flex justify-between pb-1">
+                <h3 class="uppercase font-rubik text-xs text-stone-800 font-medium">Star Rating</h3>
+                <button type="button"
+                  class="font-rubik text-resort-secondary-light uppercase font-normal text-2xs showHideBtn">Show</button>
+              </div>
+              <div class="hidden">
+                <div class="border border-[#E2E2E2] flex">
+                  <div
+                    class="border-r border-[#E2E2E2] w-full cursor-pointer star_search hover:scale-105 transition-all duration-300 ease-in-out">
+                    <div class="bg-resort w-full h-1 hidden"></div>
+                    <p class="py-2 font-rubik text-gray-500 font-medium text-sm flex justify-center mx-auto">0, 1</p>
+                    <i class="pb-3 fa-solid fa-star text-resort text-[12px] flex justify-center mx-auto"></i>
+                    <span class="block h-[2px] w-8 bg-resort justify-center mx-auto"></span>
+                    <h5 class="py-2 font-rubik text-gray-500 font-normal text-xs flex justify-center mx-auto">293</h5>
+                  </div>
+                  <div
+                    class="border-r border-[#E2E2E2] w-full cursor-pointer star_search hover:scale-105 transition-all duration-300 ease-in-out">
+                    <div class="bg-resort w-full h-1 hidden"></div>
+                    <p class="py-2 font-rubik text-gray-500 font-medium text-sm flex justify-center mx-auto">2</p>
+                    <i class="pb-3 fa-solid fa-star text-resort text-[12px] flex justify-center mx-auto"></i>
+                    <span class="block h-[2px] w-8 bg-resort justify-center mx-auto"></span>
+                    <h5 class="py-2 font-rubik text-gray-500 font-normal text-xs flex justify-center mx-auto">293</h5>
+                  </div>
+                  <div
+                    class="border-r border-[#E2E2E2] w-full cursor-pointer star_search hover:scale-105 transition-all duration-300 ease-in-out">
+                    <div class="bg-resort w-full h-1 hidden"></div>
+                    <p class="py-2 font-rubik text-gray-500 font-medium text-sm flex justify-center mx-auto">3</p>
+                    <i class="pb-3 fa-solid fa-star text-resort text-[12px] flex justify-center mx-auto"></i>
+                    <span class="block h-[2px] w-8 bg-resort justify-center mx-auto"></span>
+                    <h5 class="py-2 font-rubik text-gray-500 font-normal text-xs flex justify-center mx-auto">293</h5>
+                  </div>
+                  <div
+                    class="border-r border-[#E2E2E2] w-full cursor-pointer star_search hover:scale-105 transition-all duration-300 ease-in-out">
+                    <div class="bg-resort w-full h-1 hidden"></div>
+                    <p class="py-2 font-rubik text-gray-500 font-medium text-sm flex justify-center mx-auto">4</p>
+                    <i class="pb-3 fa-solid fa-star text-resort text-[12px] flex justify-center mx-auto"></i>
+                    <span class="block h-[2px] w-8 bg-resort justify-center mx-auto"></span>
+                    <h5 class="py-2 font-rubik text-gray-500 font-normal text-xs flex justify-center mx-auto">293</h5>
+                  </div>
+                  <div
+                    class="w-full cursor-pointer star_search hover:scale-105 transition-all duration-300 ease-in-out">
+                    <div class="bg-resort w-full h-1 hidden"></div>
+                    <p class="py-2 font-rubik text-gray-500 font-medium text-sm flex justify-center mx-auto">5</p>
+                    <i class="pb-3 fa-solid fa-star text-resort text-[12px] flex justify-center mx-auto"></i>
+                    <span class="block h-[2px] w-8 bg-resort justify-center mx-auto"></span>
+                    <h5 class="py-2 font-rubik text-gray-500 font-normal text-xs flex justify-center mx-auto">293</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <div class="mx-auto w-full justify-between bg-white flex shadow-sm px-5 mt-8">
           <div class="px-6 py-3 relative bg-[#EEEEEE] shadow-none">
             <h4 class="uppercase text-xs font-rubik font-normal tracking-wide">All Hotels (273)
-              <div class="absolute w-full h-1 bg-red-500 -top-1 right-0"></div>
+              <div class="absolute w-full h-1 bg-resort -top-1 right-0"></div>
             </h4>
             <h5 class="text-xs font-rubik font-normal tracking-wide">from ৳ 2,128 (233)</h5>
           </div>
         </div>
+
         <div class="w-full flex justify-between py-2">
           <h6 class="font-rubik text-2xs uppercase text-resort-secondary cursor-pointer">SORT BY:</h6>
           <h6 class="font-rubik text-2xs uppercase text-resort-secondary cursor-pointer">RECOMMENDED</h6>
@@ -328,16 +504,40 @@
                   data-item_large="1" data-slider-name="number_search_item_1">
                   <div class="item">
                     <div class="h-full w-full relative mx-2">
-                      <div class="absolute h-[28px] w-auto bg-red-600 -left-2 top-2 px-5 z-10">
+                      <div class="absolute h-[28px] w-auto bg-resort -left-2 top-2 px-5 z-10">
                         <span class="text-white font-semibold pb-2">
                           <span class="text-xl">31%</span><span class="text-sm mx-1">off</span>
                         </span>
                         <span class="flagwave"></span>
                       </div>
-                      <img class="w-full h-80 sm:h-[18.7rem] md:h-[12.8rem] xl:h-48 object-cover" src="./assets/images/image_1.jpg" alt="hotel_1">
-                      <div class="absolute h-6 w-7 bg-red-600 -left-1 top-[22px] rotate-[30deg] -z-10"></div>
+                      <img class="w-full h-auto sm:h-[300px] md:h-[200px] xl:h-48 object-cover" src="./assets/images/image_1.jpg" alt="hotel_1">
+                      <div class="absolute h-6 w-7 bg-resort -left-1 top-[22px] rotate-[30deg] -z-10"></div>
                     </div>
                   </div>
+                  <div class="item">
+                    <div class="h-full w-full relative mx-2">
+                      <div class="absolute h-[28px] w-auto bg-resort -left-2 top-2 px-5 z-10">
+                        <span class="text-white font-semibold pb-2">
+                          <span class="text-xl">31%</span><span class="text-sm mx-1">off</span>
+                        </span>
+                        <span class="flagwave"></span>
+                      </div>
+                      <img class="w-full h-auto sm:h-[300px] md:h-[200px] xl:h-48 object-cover" src="./assets/images/image_1.jpg" alt="hotel_1">
+                      <div class="absolute h-6 w-7 bg-resort -left-1 top-[22px] rotate-[30deg] -z-10"></div>
+                    </div>
+                  </div>    
+                  <div class="item">
+                    <div class="h-full w-full relative mx-2">
+                      <div class="absolute h-[28px] w-auto bg-green-500 -left-2 top-2 px-5 z-10">
+                        <span class="text-white font-semibold pb-2">
+                          <span class="text-xl">31%</span><span class="text-sm mx-1">off</span>
+                        </span>
+                        <span class="flagwave"></span>
+                      </div>
+                      <img class="w-full h-auto sm:h-[300px] md:h-[200px] xl:h-48 object-cover" src="./assets/images/image_1.jpg" alt="hotel_1">
+                      <div class="absolute h-6 w-7 bg-green-500 -left-1 top-[22px] rotate-[30deg] -z-10"></div>
+                    </div>
+                  </div>               
                 </div>
                 <div
                   class="absolute w-full justify-between px-4 cursor-pointer top-1 z-50 items-center h-full hidden showBtnOwlCarouselHoverBtn"
@@ -479,8 +679,10 @@
               </div>
             </div>
           </div>
-          <!-- item 2:start -->
         </div>
+        <!-- footer for pc -->
+        <div id="footer_for_pc"></div>
+        
       </div>
     </div>
     <!-- resort_info_modal -->
@@ -607,31 +809,10 @@
     </div>
   </div>
   <!-- content:End -->
-  <!-- footer:start -->
-  <footer class="md:hidden fixed bottom-0 bg-white h-auto w-full border-t-2 border-gray-400 z-50">
-    <div class="flex justify-between py-2">
-      <a href="./index.html" class="mx-auto text-center group">
-        <i class="fa-solid fa-house text-[18px] group-hover:text-red-600"></i>
-        <h3 class="group-hover:text-red-600 font-semibold">Home</h3>
-      </a>
-      <a href="./booking.html" class="mx-auto text-center group">
-        <i class="fa-solid fa-ticket text-[18px] group-hover:text-red-600"></i>
-        <h3 class="group-hover:text-red-600 font-semibold">Booking</h3>
-      </a>
-      <a href="./login.html" class="mx-auto text-center group">
-        <i class="fa-solid fa-user text-[18px] group-hover:text-red-600"></i>
-        <h3
-          class="group-hover:text-gray-100 text-white text-sm font-semibold bg-gradient-to-r from-[#AA243D] to-[#50264C] px-2 rounded-md py-0">
-          Login
-        </h3>
-      </a>
-      <a href="./contact_us.html" class="mx-auto text-center group">
-        <i class="fa-solid fa-comments text-[18px] group-hover:text-red-600"></i>
-        <h3 class="group-hover:text-red-600 font-semibold">Contact us</h3>
-      </a>
-    </div>
-  </footer>
-  <!-- footer:end -->
+
+  <!-- mobile:footer:start -->
+  <footer id="footer_for_mobile" class="md:hidden fixed bottom-0 bg-white h-auto w-full border-t-2 border-gray-400 z-50"></footer>
+  <!-- mobile:footer:end -->
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script> -->

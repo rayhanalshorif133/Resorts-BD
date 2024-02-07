@@ -20,108 +20,16 @@
 
 <body>
   <!-- header:start -->
-  <nav class="nav">
-    <div class="max-w-7xl mx-auto">
-      <div class="flex justify-between">
-        <div class="flex flex-col md:flex-row space-x-17 xl:space-x-16 py-2 mx-auto md:mx-0">
-          <a href="./index.html" class="mx-auto pl-10 md:pl-0 md:mx-0">
-            <img src="./assets/images/logo.png" alt="logo" class="w-auto h-10 md:h-12">
-          </a>
-          <div class="nav-icon">
-            <a href="./index.html" class="group w-14 md:w-10">
-              <div class="box bg-resort">
-                <i class="fa-solid fa-house text-white"></i>
-              </div>
-              <i class="fa-solid fa-house text-resort hidden md:block"></i>
-              <h3 class="text-resort left-[6px]">Resorts</h3>
-              <div class="under_line w-14 bg-resort -left-1"></div>
-            </a>
-            <a href="./boats.html" class="group w-10">
-              <div class="box hover:bg-resort group/icon">
-                <i class="fa-solid fa-ship text-resort-secondary group-hover/icon:text-white"></i>
-              </div>
-              <i class="fas fa-ship group-hover:text-resort text-resort-secondary hidden md:block"></i>
-              <h3 class="group-hover:text-resort text-resort-secondary w-14 -left-[9px] md:-left-[5px]">Boats</h3>
-              <div class="under_line w-0 group-hover:w-10 bg-resort left-0"></div>
-            </a>
-            <a href="./ships.html" class="group w-10">
-              <div class="box hover:bg-resort group/icon">
-                <i class="fa-solid fa-ship text-resort-secondary group-hover/icon:text-white"></i>
-              </div>
-              <i class="fas fa-ship group-hover:text-resort text-resort-secondary hidden md:block pr-6"></i>
-              <h3 class="group-hover:text-resort text-resort-secondary w-10 -left-0 md:-left-[4px]">Ships</h3>
-              <div class="under_line w-0 group-hover:w-10 bg-resort -left-1"></div>
-            </a>
-            <a href="./trip.html" class="group w-10">
-              <div class="box hover:bg-resort group/icon">
-                <i class="fa-solid fa-ship text-resort-secondary group-hover/icon:text-white"></i>
-              </div>
-              <i class="fas fa-ship group-hover:text-resort text-resort-secondary hidden md:block pr-6"></i>
-              <h3 class="group-hover:text-resort text-resort-secondary w-10 -left-0 md:-left-[4px]">Trips</h3>
-              <div class="under_line w-0 group-hover:w-10 bg-resort -left-1"></div>
-            </a>
-          </div>
-        </div>
-        <div class="hidden md:flex items-center justify-center space-x-2">
-          <a class="px-10 group" href="#">
-            <img src="http://placehold.it/50x50" alt="join us"
-              class="w-14 h-full rounded-sm group-hover:scale-105 transition-all ease-in-out duration-300">
-          </a>
-          <ul class="flex">
-            <li class="header-account group/account">
-              <a href="#" class="title">My Account</a>
-              <i class="fa-solid fa-caret-down text-resort"></i>
-              <div class="dropdown group-hover/account:h-32 w-0 group-hover/account:w-48">
-                <div class="relative -top-[14px] -right-[10.5rem]"><i
-                    class="fa-solid fa-caret-up text-base text-white"></i></div>
-                <div class="relative flex space-x-3 -top-3">
-                  <div class="group-hover/account:h-10 group-hover/account:w-10 icon">
-                    <i class="group-hover/account:flex hidden fa-solid fa-user-large"></i>
-                  </div>
-                  <div>
-                    <div class="hidden group-hover/account:flex group/iconName details">
-                      <i
-                        class="fa-solid fa-caret-right group-hover/iconName:text-resort-secondary group-hover/iconName:translate-x-2"></i>
-                      <h3 class="group-hover/iconName:text-resort-secondary group-hover/iconName:translate-x-2">User
-                        Name</h3>
-                    </div>
-                    <div class="hidden group-hover/account:flex group/iconName details">
-                      <i
-                        class="fa-solid fa-caret-right group-hover/iconName:text-resort-secondary group-hover/iconName:translate-x-2"></i>
-                      <h3 class="group-hover/iconName:text-resort-secondary group-hover/iconName:translate-x-2">My
-                        Booking</h3>
-                    </div>
-                  </div>
-                </div>
-                <div class="button-content group-hover/account:flex hidden">
-                  <a href="./login.html" class="login">Login</a>
-                  <a href="./login.html" class="signUp">Sign Up</a>
-                </div>
-              </div>
-            </li>
-            <li class="mr-4">
-              <a href="#"
-                class="text-gray-600 text-sm transition-all duration-500 ease-in-out font-medium hover:text-gray-800">
-                Support
-              </a>
-            </li>
-            <li class="mr-4">
-              <a href="#"
-                class="text-gray-600 text-sm transition-all duration-500 ease-in-out font-medium hover:text-gray-800">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </nav>
+  <nav id="nav_bar_content" class="nav"></nav>
+
   <!-- header:end -->
   <!-- content:start -->
   <div class="max-w-7xl mx-auto min-h-screen">
     <div class="grid grid-cols-1 md:grid-cols-12 gap-8 py-8 min-h-screen">
       <div class="col-span-12 mx-5 md:col-span-5">
         <div
-          class="bg-white h-auto pb-3 md:pb-0 md:h-full rounded-md border-l-2 mx-auto border-gray-300 custom_box-shadow w-full">
-          <form action="#"
+          class="bg-white xl:fixed xl:top-20 xl:w-[30rem] h-auto pb-3 md:pb-0 md:h-full rounded-md border-l-2 mx-auto border-gray-300 custom_box-shadow">
+          <form action="./search.html"
             class="mx-auto w-full px-5 py-3 transition-all duration-500 ease-in-out search_destination_main overflow-hidden">
             <h2 class="py-2 text-lg text-[#333333] font-medium tracking-wide font-rubik">Book on Bangladesh's Largest
               Hotel</h2>
@@ -129,16 +37,20 @@
               <div>
                 <h5 class="text-sm text-resort-secondary-light font-rubik">Destinations</h5>
                 <input type="text" name="destination"
-                  class="search_destination w-full border-b border-gray-300 px-2 py-2 mt-1 focus:outline-none focus:border-[#173C6C]"
+                  class="search_destination ring-0 active:ring-0 border-none focus:border-none focus:ring-0 w-full px-2 py-2 mt-1 focus:outline-none"
                   placeholder="Where are you going?">
+                <div class="h-[1px] bg-gray-300 w-full"></div>
               </div>
               <div id="reportrange">
                 <span class="space-y-7"></span>
               </div>
             </div>
             <div class="flex justify-end mt-14">
-              <button type="submit" class="w-full md:px-4 py-2 text-white bg-resort hover:bg-[#32527b] rounded-md group">
-                Search Hotels <i class="fa-solid fa-arrow-right-long mx-1 group-hover:translate-x-4 duration-300 transition-all ease-in-out"></i></button>
+              <button type="submit"
+                class="w-full  tracking-wide md:px-4 py-2 text-white bg-resort hover:bg-[#32527b] rounded-md group">
+                <span class="tracking-wide font-rubik text-base font-normal text-white">Search Hotels</span>
+                <i
+                  class="fa-solid fa-arrow-right-long mx-1 group-hover:translate-x-4 duration-300 transition-all ease-in-out"></i></button>
             </div>
           </form>
           <form action="#"
@@ -153,8 +65,9 @@
               </div>
               <h5 class="text-sm text-[#A7A7A7] font-rubik mt-2">Select City, Location or Hotel Name (Bangladesh)</h5>
               <input type="text"
-                class="search_destination w-full border-b border-gray-300 px-2 py-2 mt-1 focus:outline-none focus:border-[#173C6C] font-semibold text-xl text-[#000000]"
+                class="search_destination ring-0 active:ring-0 border-none focus:border-none focus:outline-none focus:ring-0 w-full border-transparent  px-2 py-2 mt-1 font-semibold text-xl text-[#000000]"
                 placeholder="Enter a destination">
+              <div class="h-[1px] bg-gray-300 w-full"></div>
               <div class="space-y-3 mt-5 destination_option_box">
                 <div class="py-3 bg-[#FAFBFD] px-2 rounded-sm cursor-pointer hover:bg-[#f0f5ff] destination_option">
                   <option value="Bandarban" class="text-sm text-gray-600 font-rubik">Bandarban</option>
@@ -181,51 +94,60 @@
       </div>
       <div class="col-span-12 mx-5 md:col-span-7 space-y-4 mb-12">
         <div class="h-24 w-full rounded-xl">
-          <img src="http://placehold.it/400x100" alt="banner" class="w-full h-full rounded-xl">
+          <img src="./assets/images/banner_1.jpg" alt="banner" class="w-full h-full rounded-xl">
         </div>
         <div class="h-24 w-full flex">
           <div class="w-1/2 h-full rounded-xl mr-2">
-            <img src="http://placehold.it/200x100" alt="banner" class="w-full h-full rounded-xl">
+            <img src="./assets/images/banner_s_1.jpg" alt="banner" class="w-full h-full rounded-xl">
           </div>
           <div class="w-1/2 h-full rounded-xl ml-2">
-            <img src="http://placehold.it/200x100" alt="banner" class="w-full h-full rounded-xl">
+            <img src="./assets/images/banner_s_2.jpg" alt="banner" class="w-full h-full rounded-xl">
           </div>
         </div>
         <div class="h-24 w-full rounded-xl">
-          <img src="http://placehold.it/400x100" alt="banner" class="w-full h-full rounded-xl">
+          <img src="./assets/images/banner_2.jpg" alt="banner" class="w-full h-full rounded-xl">
         </div>
         <div class="slider">
           <div class="flex justify-between">
             <div class="flex">
-              <div>
-                <h5>Hotel Discounts For You</h5>
+              <h5 class="text-[#333333] font-medium font-rubik text-base">Hotel Discounts For You</h5>
+              <div class="px-2"><a href="#"
+                  class="text-sm hover:text-resort text-[#2a92c5] hover:underline font-medium font-rubik">View All</a>
               </div>
-              <div><a href="#">View All</a></div>
             </div>
-            <div class="flex space-x-4 py-2" data-target="heloo">
-              <div class="slide_left_btn h-7 w-7 bg-gray-500 cursor-pointer flex justify-center items-center"><i
-                  class="fa-solid fa-angle-left text-white flex justify-center items-center"></i></div>
-              <div class="slide_right_btn h-7 w-7 bg-gray-500 cursor-pointer flex justify-center items-center"><i
-                  class="fa-solid fa-chevron-right text-white flex justify-center items-center"></i></div>
+            <div class="flex space-x-4 py-2" data-target="num_1">
+              <button class="slide_left_btn h-7 w-8 bg-resort cursor-pointer flex justify-center items-center"><i
+                  class="fa-solid fa-arrow-left-long text-white flex justify-center items-center"></i></button>
+              <button class="slide_right_btn h-7 w-8 bg-resort cursor-pointer flex justify-center items-center"><i
+                  class="fa-solid fa-arrow-right-long text-white flex justify-center items-center"></i></button>
             </div>
           </div>
-          <div class="owl-carousel owl-theme" data-item_small="1" data-item_medium="2" data-item_large="3" data-slider-name="heloo">
+          <div class="owl-carousel owl-theme" data-item_small="1" data-item_medium="2" data-item_large="3"
+            data-slider-name="num_1">
             <div class="item">
-              <div class="bg-[#d6e0d1] h-64 w-44 relative mx-3">
-                <div class="absolute h-6 w-12 bg-green-500 -left-2 top-2 px-3"><span class="text-white font-semibold">50%</span></div>
+              <div class="h-[212px] w-[215px] relative mx-3">
+                <div class="absolute h-6 w-12 bg-green-500 -left-2 top-2 px-3"><span
+                    class="text-white font-semibold">50%</span></div>
                 <div class="absolute h-6 w-7 bg-green-500 -left-1 top-[16px] rotate-[30deg] -z-50"></div>
+                <img src="https://resortsbd.com/upload/resort/1680157193_resort_image1.jpg" alt="banner"
+                  class="w-full h-full">
               </div>
             </div>
             <div class="item">
-              <div class="bg-[#d6e0d1] h-64 w-44 relative mx-3">
-                <div class="absolute h-6 w-12 bg-red-500 -left-2 top-2 px-3"><span class="text-white font-semibold">50%</span></div>
-                <div class="absolute h-6 w-7 bg-red-500 -left-1 top-[16px] rotate-[30deg] -z-50"></div>
+              <div class="h-[212px] w-[215px] relative mx-3">
+                <div class="absolute h-6 w-12 bg-green-500 -left-2 top-2 px-3"><span
+                    class="text-white font-semibold">50%</span></div>
+                <div class="absolute h-6 w-7 bg-green-500 -left-1 top-[16px] rotate-[30deg] -z-50"></div>
+                <img src="https://placehold.co/250x250" alt="banner" class="w-full h-full">
               </div>
             </div>
             <div class="item">
-              <div class="bg-[#d6e0d1] h-64 w-44 relative mx-3">
-                <div class="absolute h-6 w-12 bg-green-500 -left-2 top-2 px-3"><span class="text-white font-semibold">50%</span></div>
+              <div class="h-[212px] w-[215px] relative mx-3">
+                <div class="absolute h-6 w-12 bg-green-500 -left-2 top-2 px-3"><span
+                    class="text-white font-semibold">50%</span></div>
                 <div class="absolute h-6 w-7 bg-green-500 -left-1 top-[16px] rotate-[30deg] -z-50"></div>
+                <img src="https://resortsbd.com/upload/resort/1680157193_resort_image1.jpg" alt="banner"
+                  class="w-full h-full">
               </div>
             </div>
           </div>
@@ -234,72 +156,105 @@
         <div class="slider">
           <div class="flex justify-between">
             <div class="flex">
-              <div>
-                <h5>Hotel Discounts For You</h5>
+              <h5 class="text-[#333333] font-medium font-rubik text-base">Hotel Discounts For You</h5>
+              <div class="px-2"><a href="#"
+                  class="text-sm hover:text-resort text-[#2a92c5] hover:underline font-medium font-rubik">View All</a>
               </div>
-              <div><a href="#">View All</a></div>
             </div>
-            <div class="flex space-x-4 py-2" data-target="number_2">
-              <div class="slide_left_btn h-7 w-7 bg-gray-500 cursor-pointer flex justify-center items-center"><i
-                  class="fa-solid fa-angle-left text-white flex justify-center items-center"></i></div>
-              <div class="slide_right_btn h-7 w-7 bg-gray-500 cursor-pointer flex justify-center items-center"><i
-                  class="fa-solid fa-chevron-right text-white flex justify-center items-center"></i></div>
+            <div class="flex space-x-4 py-2" data-target="num_2">
+              <button class="slide_left_btn h-7 w-8 bg-resort cursor-pointer flex justify-center items-center"><i
+                  class="fa-solid fa-arrow-left-long text-white flex justify-center items-center"></i></button>
+              <button class="slide_right_btn h-7 w-8 bg-resort cursor-pointer flex justify-center items-center"><i
+                  class="fa-solid fa-arrow-right-long text-white flex justify-center items-center"></i></button>
             </div>
           </div>
-          <div class="owl-carousel owl-theme" data-item_small="1" data-item_medium="2" data-item_large="3" data-slider-name="number_2">
+          <div class="owl-carousel owl-theme" data-item_small="1" data-item_medium="2" data-item_large="3"
+            data-slider-name="num_2">
             <div class="item">
-              <div class="bg-[#d6e0d1] h-64 w-44 relative mx-3">
-                <div class="absolute h-6 w-auto bg-green-500 -left-2 top-2 px-3"><span class="text-white font-semibold">Hello World</span></div>
+              <div class="h-[212px] w-[215px] relative mx-3">
+                <div class="absolute h-6 w-12 bg-green-500 -left-2 top-2 px-3"><span
+                    class="text-white font-semibold">50%</span></div>
                 <div class="absolute h-6 w-7 bg-green-500 -left-1 top-[16px] rotate-[30deg] -z-50"></div>
+                <img src="https://resortsbd.com/upload/resort/1680157193_resort_image1.jpg" alt="banner"
+                  class="w-full h-full">
               </div>
             </div>
             <div class="item">
-              <div class="bg-[#d6e0d1] h-64 w-44 relative mx-3">
-                <div class="absolute h-6 w-auto bg-red-500 -left-2 top-2 px-3"><span class="text-white font-semibold">50%</span></div>
-                <div class="absolute h-6 w-7 bg-red-500 -left-1 top-[16px] rotate-[30deg] -z-50"></div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="bg-[#d6e0d1] h-64 w-44 relative mx-3">
-                <div class="absolute h-6 w-auto bg-resort -left-2 top-2 px-3"><span class="text-white font-semibold">50%</span></div>
-                <div class="absolute h-6 w-7 bg-resort -left-1 top-[16px] rotate-[30deg] -z-50"></div>
-              </div>
-            </div>
-            <div class="item">
-              <div class="bg-[#d6e0d1] h-64 w-44 relative mx-3">
-                <div class="absolute h-6 w-auto bg-green-500 -left-2 top-2 px-3"><span class="text-white font-semibold">50%</span></div>
+              <div class="h-[212px] w-[215px] relative mx-3">
+                <div class="absolute h-6 w-12 bg-green-500 -left-2 top-2 px-3"><span
+                    class="text-white font-semibold">50%</span></div>
                 <div class="absolute h-6 w-7 bg-green-500 -left-1 top-[16px] rotate-[30deg] -z-50"></div>
+                <img src="https://placehold.co/250x250" alt="banner" class="w-full h-full">
+              </div>
+            </div>
+            <div class="item">
+              <div class="h-[212px] w-[215px] relative mx-3">
+                <div class="absolute h-6 w-12 bg-green-500 -left-2 top-2 px-3"><span
+                    class="text-white font-semibold">50%</span></div>
+                <div class="absolute h-6 w-7 bg-green-500 -left-1 top-[16px] rotate-[30deg] -z-50"></div>
+                <img src="https://resortsbd.com/upload/resort/1680157193_resort_image1.jpg" alt="banner"
+                  class="w-full h-full">
               </div>
             </div>
           </div>
         </div>
+
+        <div class="slider">
+          <div class="flex justify-between">
+            <div class="flex">
+              <h5 class="text-[#333333] font-medium font-rubik text-base">Hotel Discounts For You</h5>
+              <div class="px-2"><a href="#"
+                  class="text-sm hover:text-resort text-[#2a92c5] hover:underline font-medium font-rubik">View All</a>
+              </div>
+            </div>
+            <div class="flex space-x-4 py-2" data-target="num_3">
+              <button class="slide_left_btn h-7 w-8 bg-resort cursor-pointer flex justify-center items-center"><i
+                  class="fa-solid fa-arrow-left-long text-white flex justify-center items-center"></i></button>
+              <button class="slide_right_btn h-7 w-8 bg-resort cursor-pointer flex justify-center items-center"><i
+                  class="fa-solid fa-arrow-right-long text-white flex justify-center items-center"></i></button>
+            </div>
+          </div>
+          <div class="owl-carousel owl-theme" data-item_small="1" data-item_medium="2" data-item_large="3"
+            data-slider-name="num_3">
+            <div class="item">
+              <div class="h-[212px] w-[215px] relative mx-3">
+                <div class="absolute h-6 w-12 bg-green-500 -left-2 top-2 px-3"><span
+                    class="text-white font-semibold">50%</span></div>
+                <div class="absolute h-6 w-7 bg-green-500 -left-1 top-[16px] rotate-[30deg] -z-50"></div>
+                <img src="https://resortsbd.com/upload/resort/1680157193_resort_image1.jpg" alt="banner"
+                  class="w-full h-full">
+              </div>
+            </div>
+            <div class="item">
+              <div class="h-[212px] w-[215px] relative mx-3">
+                <div class="absolute h-6 w-12 bg-green-500 -left-2 top-2 px-3"><span
+                    class="text-white font-semibold">50%</span></div>
+                <div class="absolute h-6 w-7 bg-green-500 -left-1 top-[16px] rotate-[30deg] -z-50"></div>
+                <img src="https://placehold.co/250x250" alt="banner" class="w-full h-full">
+              </div>
+            </div>
+            <div class="item">
+              <div class="h-[212px] w-[215px] relative mx-3">
+                <div class="absolute h-6 w-12 bg-green-500 -left-2 top-2 px-3"><span
+                    class="text-white font-semibold">50%</span></div>
+                <div class="absolute h-6 w-7 bg-green-500 -left-1 top-[16px] rotate-[30deg] -z-50"></div>
+                <img src="https://resortsbd.com/upload/resort/1680157193_resort_image1.jpg" alt="banner"
+                  class="w-full h-full">
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <!-- footer for pc -->
+        <div id="footer_for_pc"></div>
+
       </div>
     </div>
   </div>
   <!-- content:End -->
   <!-- footer:start -->
-  <footer class="md:hidden fixed bottom-0 bg-white h-auto w-full border-t-2 border-gray-400 z-50">
-    <div class="flex justify-between py-2">
-      <a href="./index.html" class="mx-auto text-center group">
-        <i class="fa-solid fa-house text-[18px] group-hover:text-red-600"></i>
-        <h3 class="group-hover:text-red-600 font-semibold">Home</h3>
-      </a>
-      <a href="./booking.html" class="mx-auto text-center group">
-        <i class="fa-solid fa-ticket text-[18px] group-hover:text-red-600"></i>
-        <h3 class="group-hover:text-red-600 font-semibold">Booking</h3>
-      </a>
-      <a href="./login.html" class="mx-auto text-center group">
-        <i class="fa-solid fa-user text-[18px] group-hover:text-red-600"></i>
-        <h3
-          class="group-hover:text-gray-100 text-white text-sm font-semibold bg-gradient-to-r from-[#AA243D] to-[#50264C] px-2 rounded-md py-0">
-          Login</h3>
-      </a>
-      <a href="./contact_us.html" class="mx-auto text-center group">
-        <i class="fa-solid fa-comments text-[18px] group-hover:text-red-600"></i>
-        <h3 class="group-hover:text-red-600 font-semibold">Contact us</h3>
-      </a>
-    </div>
-  </footer>
+  <footer id="footer_for_mobile" class="md:hidden fixed bottom-0 bg-white h-auto w-full border-t-2 border-gray-400 z-50"></footer>
   <!-- footer:end -->
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 

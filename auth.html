@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="./assets/favicon/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
+
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+  <link href="./src/output.css" rel="stylesheet">
+  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
+  <title>Resorts BD :: Home</title>
+</head>
+
+<body>
+  <!-- header:start -->
+  <nav class="nav">
+    <div class="max-w-7xl mx-auto">
+      <div class="flex justify-between">
+        <div class="flex flex-col md:flex-row space-x-17 xl:space-x-16 py-2 mx-auto md:mx-0">
+          <a href="./index.html" class="mx-auto pl-10 md:pl-0 md:mx-0">
+            <img src="./assets/images/logo.png" alt="logo" class="w-auto h-10 md:h-12">
+          </a>
+          <div class="nav-icon">
+            <a href="./index.html" class="group w-14 md:w-10">
+              <div class="box bg-resort">
+                <i class="fa-solid fa-house text-white"></i>
+              </div>
+              <i class="fa-solid fa-house text-resort hidden md:block"></i>
+              <h3 class="text-resort left-[6px]">Resorts</h3>
+              <div class="under_line w-14 bg-resort -left-1"></div>
+            </a>
+            <a href="./boats.html" class="group w-10">
+              <div class="box hover:bg-resort group/icon">
+                <i class="fa-solid fa-ship text-resort-secondary group-hover/icon:text-white"></i>
+              </div>
+              <i class="fas fa-ship group-hover:text-resort text-resort-secondary hidden md:block"></i>
+              <h3 class="group-hover:text-resort text-resort-secondary w-14 -left-[9px] md:-left-[5px]">Boats</h3>
+              <div class="under_line w-0 group-hover:w-10 bg-resort left-0"></div>
+            </a>
+            <a href="./ships.html" class="group w-10">
+              <div class="box hover:bg-resort group/icon">
+                <i class="fa-solid fa-ship text-resort-secondary group-hover/icon:text-white"></i>
+              </div>
+              <i class="fas fa-ship group-hover:text-resort text-resort-secondary hidden md:block pr-6"></i>
+              <h3 class="group-hover:text-resort text-resort-secondary w-10 -left-0 md:-left-[4px]">Ships</h3>
+              <div class="under_line w-0 group-hover:w-10 bg-resort -left-1"></div>
+            </a>
+            <a href="./trip.html" class="group w-10">
+              <div class="box hover:bg-resort group/icon">
+                <i class="fa-solid fa-ship text-resort-secondary group-hover/icon:text-white"></i>
+              </div>
+              <i class="fas fa-ship group-hover:text-resort text-resort-secondary hidden md:block pr-6"></i>
+              <h3 class="group-hover:text-resort text-resort-secondary w-10 -left-0 md:-left-[4px]">Trips</h3>
+              <div class="under_line w-0 group-hover:w-10 bg-resort -left-1"></div>
+            </a>
+          </div>
+        </div>
+        <div class="hidden md:flex items-center justify-center space-x-2">
+          <a class="px-10 group" href="#">
+            <img src="http://placehold.it/50x50" alt="join us"
+              class="w-14 h-full rounded-sm group-hover:scale-105 transition-all ease-in-out duration-300">
+          </a>
+          <ul class="flex">
+            <li class="header-account group/account">
+              <a href="#" class="title">My Account</a>
+              <i class="fa-solid fa-caret-down text-resort"></i>
+              <div class="dropdown group-hover/account:h-32 w-0 group-hover/account:w-48">
+                <div class="relative -top-[14px] -right-[10.5rem]"><i
+                    class="fa-solid fa-caret-up text-base text-white"></i></div>
+                <div class="relative flex space-x-3 -top-3">
+                  <div class="group-hover/account:h-10 group-hover/account:w-10 icon">
+                    <i class="group-hover/account:flex hidden fa-solid fa-user-large"></i>
+                  </div>
+                  <div>
+                    <div class="hidden group-hover/account:flex group/iconName details">
+                      <i
+                        class="fa-solid fa-caret-right group-hover/iconName:text-resort-secondary group-hover/iconName:translate-x-2"></i>
+                      <h3 class="group-hover/iconName:text-resort-secondary group-hover/iconName:translate-x-2">User
+                        Name</h3>
+                    </div>
+                    <div class="hidden group-hover/account:flex group/iconName details">
+                      <i
+                        class="fa-solid fa-caret-right group-hover/iconName:text-resort-secondary group-hover/iconName:translate-x-2"></i>
+                      <h3 class="group-hover/iconName:text-resort-secondary group-hover/iconName:translate-x-2">My
+                        Booking</h3>
+                    </div>
+                  </div>
+                </div>
+                <div class="button-content group-hover/account:flex hidden">
+                  <a href="./auth.html" class="login">Login</a>
+                  <a href="./auth.html" class="signUp">Sign Up</a>
+                </div>
+              </div>
+            </li>
+            <li class="mr-4">
+              <a href="#"
+                class="text-gray-600 text-sm transition-all duration-500 ease-in-out font-medium hover:text-gray-800">
+                Support
+              </a>
+            </li>
+            <li class="mr-4">
+              <a href="#"
+                class="text-gray-600 text-sm transition-all duration-500 ease-in-out font-medium hover:text-gray-800">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- header:end -->
+  <!-- content:start -->
+  <div class="max-w-7xl mx-auto min-h-screen">
+    <div class="py-5 w-full mx-auto justify-center">
+      <h3
+        class="border-dashed border-b-2 mx-auto w-fit border-resort-secondary py-2 font-rubik text-xl uppercase font-medium text-resort text-center group">
+        SIGN IN TO START YOUR SESSION
+      </h3>
+    </div>
+    <div class="border p-5 mb-10 border-gray-400 shadow-sm  mx-auto justify-center w-fit">
+      <div class="flex space-x-4 mx-auto justify-center">
+        <button data-target="signIn" class="authBtn authActiveBtn">
+          Sign In
+        </button>
+        <button data-target="signUp"
+          class="authBtn authInactiveBtn">
+          Sign Up
+        </button>
+      </div>
+      <div class="mx-auto justify-center">
+        <div class="signIn my-2 mx-auto justify-center">
+          <h5 class="font-rubik text-center mx-auto text-resort font-normal py-2 border-b border-resort">Sign In Here</h5>
+          <form class="w-[20.5rem] h-auto mx-auto py-2" action="#">
+            <div>
+              <label class="font-rubik text-resort font-normal text-sm" for="login_email">Email</label>
+              <input type="email" class="w-full h-10 border border-gray-400 rounded-md px-3" id="login_email" name="login_email"
+                placeholder="Enter your email">
+            </div>
+            <div>
+              <label class="font-rubik text-resort font-normal text-sm" for="login_password">Password</label>
+              <input type="password" class="w-full h-10 border border-gray-400 rounded-md px-3" id="login_password"
+                name="login_password" placeholder="Enter your password">
+            </div>
+            <div class="flex justify-between items-center py-2">
+              <div class="flex items-center">
+                <input type="checkbox" class="h-4 w-4 rounded-md border border-gray-400" id="remember" name="remember">
+                <label class="font-rubik text-resort font-normal text-sm px-2" for="remember">Remember me</label>
+              </div>
+              <a href="#" class="font-rubik text-resort font-normal text-sm">Forgot Password?</a>
+            </div>
+            <div class="flex justify-center">
+              <button type="submit"
+                class="w-full h-10 bg-resort text-white font-rubik font-normal text-sm rounded-md cursor-pointer">Sign
+                In</button>
+            </div>
+          </form>
+        </div>
+        <div class="signUp hidden my-2 mx-auto justify-center">
+          <h5 class="font-rubik text-center mx-auto text-resort py-2 border-b border-resort font-normal">Sign Up Here</h5>
+          <form class="w-full h-auto mx-auto py-2" action="#">
+            <div>
+              <label class="font-rubik text-resort font-normal text-sm" for="email">Email</label>
+              <input type="email" class="w-full h-10 border border-gray-400 rounded-md px-3" id="email" name="email"
+                placeholder="Enter your email">
+            </div>
+            <div>
+              <label class="font-rubik text-resort font-normal text-sm" for="password">Password</label>
+              <input type="password" class="w-full h-10 border border-gray-400 rounded-md px-3" id="password"
+                name="password" placeholder="Enter your password">
+            </div>
+            <div>
+              <label class="font-rubik text-resort font-normal text-sm" for="confirmPassword">Confirm Password</label>
+              <input type="password" class="w-full h-10 border border-gray-400 rounded-md px-3" id="confirmPassword"
+                name="confirmPassword" placeholder="Enter your password">
+            </div>
+            <!-- phone -->
+            <div>
+              <label class="font-rubik text-resort font-normal text-sm" for="phone">Phone</label>
+              <input type="text" class="w-full h-10 border border-gray-400 rounded-md px-3" id="phone" name="phone"
+                placeholder="Enter your phone">
+            </div>
+            <div class="flex justify-center py-2">
+              <button type="submit"
+                class="w-full h-10 bg-resort text-white font-rubik font-normal text-sm rounded-md cursor-pointer">Sign
+                In</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div id="footer_for_pc"></div>
+  </div>
+  <!-- content:End -->
+  <!-- footer:start -->
+  <footer id="footer_for_mobile" class="md:hidden fixed bottom-0 bg-white h-auto w-full border-t-2 border-gray-400 z-50"></footer>
+  <!-- footer:end -->
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/datepicker.min.js"></script> -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="./assets/index.js"></script>
+</body>
+
+</html>
