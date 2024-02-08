@@ -8,7 +8,36 @@ $(() => {
     handleOwlCarouselHover();
     handleFooterBtn();
     handleAuthForm();
+    handleAfterSelectContainer();
 });
+
+const handleAfterSelectContainer = () => {
+    const GET_LABELS =  $(".after_select_container").find('label');
+    GET_LABELS.each(function (index, element) {
+        const text = $(element).text();
+        const max = $(element).attr('data-max');
+        const MAKE_TEXT = text + ' (Max ' + max + ')';
+        $(element).text(MAKE_TEXT);
+    });
+
+    const GET_INPUTS =  $(".after_select_container").find('input');
+
+    GET_INPUTS.each(function (index, element) {
+        // get closest label
+        const label = $(element).parent().find('label').attr('data-max');
+        const max = parseInt(label);
+        // get input value
+        $(element).on('keyup', function () {
+            const value = $(element).val();
+            const parseValue = parseInt(value);
+            if (parseValue > max) {
+                $(element).val(max);
+            }
+        });
+    });
+
+
+}; 
 
 const handleAutoInculdeFiles = () => {
     $("#nav_bar_content").load("./components/nav_bar_content.html");

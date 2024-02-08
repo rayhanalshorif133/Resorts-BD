@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
     rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
 
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
@@ -26,231 +27,305 @@
   <!-- content:start -->
   <div class="max-w-7xl mx-auto min-h-screen">
     <div class="grid grid-cols-1 md:grid-cols-12 gap-8 py-8 min-h-screen">
-      <div class="col-span-12 mx-5 md:col-span-5">
+
+      <div class="col-span-12 mx-5 md:col-span-9 space-y-4 mb-12">
+        <h5 class="text-[#333333] font-medium font-rubik text-base">Searching RESORT's Name</h5>
+        <!-- item 1 -->
         <div
-          class="bg-white xl:fixed xl:top-20 xl:w-[30rem] h-auto pb-3 md:pb-0 md:h-full rounded-md border-l-2 mx-auto border-gray-300 custom_box-shadow">
-          <form action="./search.html"
-            class="mx-auto w-full px-5 py-3 transition-all duration-500 ease-in-out search_destination_main overflow-hidden">
-            <h2 class="py-2 text-lg text-[#333333] font-medium tracking-wide font-rubik">Book on Bangladesh's Largest
-              Hotel</h2>
-            <div class="space-y-10">
+          class="h-auto w-full pr-5 transition-all duration-300 ease-in-out shadow-[0_0_8px_rgba(0,0,0,0.2)] group/item hover:bg-resort/10 relative z-50">
+          <div class="flex h-52 space-x-4">
+            <div class="w-72 h-52 relative">
+              <div class="owl-carousel owl-theme" data-item_small="1" data-item_medium="1" data-item_large="1"
+                data-slider-name="check_availability_slider_num_1">
+                <div class="item">
+                  <div class="h-52 w-72">
+                    <img src="https://resortsbd.com/upload/resort/1680157193_resort_image1.jpg" alt="banner"
+                      class="w-full h-full">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="h-52 w-72">
+                    <img src="https://resortsbd.com/upload/resort/1680157193_resort_image1.jpg" alt="banner"
+                      class="w-full h-full">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="h-52 w-72">
+                    <img src="https://resortsbd.com/upload/resort/1680157193_resort_image1.jpg" alt="banner"
+                      class="w-full h-full">
+                  </div>
+                </div>
+              </div>
+              <div class="absolute w-full justify-between px-4 cursor-pointer top-1 z-50 items-center h-full flex"
+                data-target="check_availability_slider_num_1">
+                <button
+                  class="slide_left_btn h-8 w-8 rounded-full bg-[#D9E8E5]/50 text-[#EEEEEE] hover:bg-resort-secondary-light flex items-center justify-center cursor-pointer">
+                  <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button
+                  class="slide_right_btn h-8 w-8 rounded-full bg-[#D9E8E5]/50 text-[#EEEEEE] hover:bg-resort-secondary-light flex items-center justify-center cursor-pointer">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+            <div class="w-full px-1">
+              <div
+                class="flex w-full justify-between relative border-b border-[#e4e4e4] group-hover/item:border-[#c5c5c5] pb-2">
+                <div class="space-y-1">
+                  <h1 class="font-rubik text-base font-semibold text-resort py-3">Hobbit Standards 01</h1>
+                  <div class="py-2">
+                    <h2 class="font-rubik text-sm font-normal text-resort-secondary">Eco Couple Room</h2>
+                    <h3 class="font-rubik text-sm font-normal text-resort-secondary">2 Adults</h3>
+                  </div>
+                  <h4 class="font-rubik text-xs font-normal text-resort-secondary">Room Rates Inclusive of Ser. Chg. &
+                    VAT
+                  </h4>
+                  <h5 class="font-rubik text-xs font-normal text-resort-secondary">Breakfast is included in the room
+                    rates
+                  </h5>
+                </div>
+                <div class="px-2">
+                  <h1 class="mt-10 text-xs font-rubik flex justify-end line-through text-red-400">Tk. 6000</h1>
+                  <h2 class="text-sm font-rubik font-medium flex justify-end text-resort">Tk. 3000</h2>
+                  <p class="text-2xs font-rubik font-medium flex justify-end text-resort-secondary">Price Per Night</p>
+                </div>
+              </div>
+              <div class="py-2">
+                <div class="flex justify-between">
+                  <div class="flex space-x-4">
+                    <button
+                      class="text-resort group/icon font-medium font-rubik transition-all duration-300 ease-in-out text-sm" data-modal-target="room_info_modal" data-modal-toggle="room_info_modal">Room
+                      Info
+                      <i
+                        class="fas fa-chevron-circle-right transition-all duration-500 ease-in-out group-hover/icon:translate-x-1"></i>
+                    </button>
+                    <button
+                      class="text-resort group/icon font-medium font-rubik transition-all duration-300 ease-in-out text-sm" data-modal-target="resort_info_modal" data-modal-toggle="resort_info_modal">Resort
+                      Info
+                      <i
+                        class="fas fa-chevron-circle-right transition-all duration-500 ease-in-out group-hover/icon:translate-x-1"></i>
+                    </button>
+                  </div>
+                  <div class="p-2">
+                    <button
+                      class="selectBtn hover:scale-110 transition-all duration-300 ease-in-out text-white cursor-pointer font-rubik text-xs font-medium px-3 py-1 rounded-md">
+                      Select
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--  -->
+          <div class="after_select_container px-5 flex w-full justify-between">
+            <div class="flex space-x-4 w-1/3">
+              <button
+                class="text-resort group/icon font-medium font-rubik transition-all duration-300 ease-in-out text-sm block"
+                data-modal-target="child_policy_modal" data-modal-toggle="child_policy_modal">
+                <i class="fas fa-child"></i>
+                Child Policy
+                <div class="w-0 duration-500 ease-in-out transition-all bg-resort h-1 group-hover/icon:w-full"></div>
+              </button>
+              <button
+                class="text-resort group/icon font-medium font-rubik transition-all duration-300 ease-in-out text-sm block"
+                data-modal-target="extra_bed_policy_modal" data-modal-toggle="extra_bed_policy_modal">
+                <i class="fas fa-folder-plus"></i>
+                Extra Bed Policy
+                <div class="w-0 duration-500 ease-in-out transition-all bg-resort h-1 group-hover/icon:w-full"></div>
+              </button>
+            </div>
+            <form class="flex space-x-2 w-2/3" action="#">
               <div>
-                <h5 class="text-sm text-resort-secondary-light font-rubik">Destinations</h5>
-                <input type="text" name="destination"
-                  class="search_destination ring-0 active:ring-0 border-none focus:border-none focus:ring-0 w-full px-2 py-2 mt-1 focus:outline-none"
-                  placeholder="Where are you going?">
-                <div class="h-[1px] bg-gray-300 w-full"></div>
+                <label for="set_person" data-max="20"
+                  class="text-resort-secondary font-rubik text-xs font-medium">Person</label>
+                <input type="number" id="set_person" name="set_person"
+                  class="w-full h-8 py-1 border border-gray-300 active:border-gray-400 focus:outline-none focus:border-gray-500 focus:border rounded-sm px-2"
+                  placeholder="Enter person">
               </div>
-              <div id="reportrange">
-                <span class="space-y-7"></span>
+              <!-- extra person -->
+              <div>
+                <label for="extra_person" data-max="2"
+                  class="text-resort-secondary font-rubik text-xs font-medium">Extra Person</label>
+                <input type="number" id="extra_person" name="extra_person"
+                  class="w-full h-8 py-1 border border-gray-300 active:border-gray-400 focus:outline-none focus:border-gray-500 focus:border rounded-sm px-2"
+                  placeholder="Enter extra person">
               </div>
-            </div>
-            <div class="flex justify-end mt-14">
-              <button type="submit"
-                class="w-full  tracking-wide md:px-4 py-2 text-white bg-resort hover:bg-[#32527b] rounded-md group">
-                <span class="tracking-wide font-rubik text-base font-normal text-white">Search Hotels</span>
-                <i
-                  class="fa-solid fa-arrow-right-long mx-1 group-hover:translate-x-4 duration-300 transition-all ease-in-out"></i></button>
-            </div>
-          </form>
-          <form action="#"
-            class="mx-auto w-full px-5 py-3 transition-all duration-500 ease-in-out hidden search_destination_form">
-            <div class="flex flex-col">
-              <div class="flex">
-                <div class="w-5 cursor-pointer return_main_destination_form">
-                  <i class="fa fa-arrow-left text-[#173C6C] text-sm mt-1"></i>
-                </div>
-                <h2 class="text-base text-[#333333] font-medium tracking-wide font-rubik text-center mx-auto">Select
-                  Destination</h2>
+              <div class="py-5">
+                <button type="submit"
+                  class="mt-2 hover:scale-110 confirmBtn transition-all duration-300 ease-in-out text-white cursor-pointer font-rubik text-xs font-medium px-3 py-1 rounded-md">
+                  Confirm
+                </button>
               </div>
-              <h5 class="text-sm text-[#A7A7A7] font-rubik mt-2">Select City, Location or Hotel Name (Bangladesh)</h5>
-              <input type="text"
-                class="search_destination ring-0 active:ring-0 border-none focus:border-none focus:outline-none focus:ring-0 w-full border-transparent  px-2 py-2 mt-1 font-semibold text-xl text-[#000000]"
-                placeholder="Enter a destination">
-              <div class="h-[1px] bg-gray-300 w-full"></div>
-              <div class="space-y-3 mt-5 destination_option_box">
-                <div class="py-3 bg-[#FAFBFD] px-2 rounded-sm cursor-pointer hover:bg-[#f0f5ff] destination_option">
-                  <option value="Bandarban" class="text-sm text-gray-600 font-rubik">Bandarban</option>
-                </div>
-                <div class="py-3 bg-[#FAFBFD] px-2 rounded-sm cursor-pointer hover:bg-[#f0f5ff] destination_option">
-                  <option value="Rangamati" class="text-sm text-gray-600 font-rubik">Rangamati</option>
-                </div>
-                <div class="py-3 bg-[#FAFBFD] px-2 rounded-sm cursor-pointer hover:bg-[#f0f5ff] destination_option">
-                  <option value="Kaptai" class="text-sm text-gray-600 font-rubik">Kaptai</option>
-                </div>
-                <div class="py-3 bg-[#FAFBFD] px-2 rounded-sm cursor-pointer hover:bg-[#f0f5ff] destination_option">
-                  <option value="Cox's Bazar" class="text-sm text-gray-600 font-rubik">Cox's Bazar</option>
-                </div>
-                <div class="py-3 bg-[#FAFBFD] px-2 rounded-sm cursor-pointer hover:bg-[#f0f5ff] destination_option">
-                  <option value="Saint Martin" class="text-sm text-gray-600 font-rubik">Saint Martin</option>
-                </div>
-                <div class="py-3 bg-[#FAFBFD] px-2 rounded-sm cursor-pointer hover:bg-[#f0f5ff] destination_option">
-                  <option value="Sylhet" class="text-sm text-gray-600 font-rubik">Sylhet</option>
-                </div>
-              </div>
-            </div>
-          </form>
-        </div>
-      </div>
-      <div class="col-span-12 mx-5 md:col-span-7 space-y-4 mb-12">
-        <div class="h-24 w-full rounded-xl">
-          <img src="./assets/images/banner_1.jpg" alt="banner" class="w-full h-full rounded-xl">
-        </div>
-        <div class="h-24 w-full flex">
-          <div class="w-1/2 h-full rounded-xl mr-2">
-            <img src="./assets/images/banner_s_1.jpg" alt="banner" class="w-full h-full rounded-xl">
+            </form>
           </div>
-          <div class="w-1/2 h-full rounded-xl ml-2">
-            <img src="./assets/images/banner_s_2.jpg" alt="banner" class="w-full h-full rounded-xl">
-          </div>
-        </div>
-        <div class="h-24 w-full rounded-xl">
-          <img src="./assets/images/banner_2.jpg" alt="banner" class="w-full h-full rounded-xl">
-        </div>
-        <div class="slider">
-          <div class="flex justify-between">
-            <div class="flex">
-              <h5 class="text-[#333333] font-medium font-rubik text-base">Hotel Discounts For You</h5>
-              <div class="px-2"><a href="#"
-                  class="text-sm hover:text-resort text-[#2a92c5] hover:underline font-medium font-rubik">View All</a>
-              </div>
-            </div>
-            <div class="flex space-x-4 py-2" data-target="num_1">
-              <button class="slide_left_btn h-7 w-8 bg-resort cursor-pointer flex justify-center items-center"><i
-                  class="fa-solid fa-arrow-left-long text-white flex justify-center items-center"></i></button>
-              <button class="slide_right_btn h-7 w-8 bg-resort cursor-pointer flex justify-center items-center"><i
-                  class="fa-solid fa-arrow-right-long text-white flex justify-center items-center"></i></button>
-            </div>
-          </div>
-          <div class="owl-carousel owl-theme" data-item_small="1" data-item_medium="2" data-item_large="3"
-            data-slider-name="num_1">
-            <div class="item">
-              <div class="h-[212px] w-[215px] relative mx-3">
-                <div class="absolute h-6 w-12 bg-green-500 -left-2 top-2 px-3"><span
-                    class="text-white font-semibold">50%</span></div>
-                <div class="absolute h-6 w-7 bg-green-500 -left-1 top-[16px] rotate-[30deg] -z-50"></div>
-                <img src="https://resortsbd.com/upload/resort/1680157193_resort_image1.jpg" alt="banner"
-                  class="w-full h-full">
-              </div>
-            </div>
-            <div class="item">
-              <div class="h-[212px] w-[215px] relative mx-3">
-                <div class="absolute h-6 w-12 bg-green-500 -left-2 top-2 px-3"><span
-                    class="text-white font-semibold">50%</span></div>
-                <div class="absolute h-6 w-7 bg-green-500 -left-1 top-[16px] rotate-[30deg] -z-50"></div>
-                <img src="https://placehold.co/250x250" alt="banner" class="w-full h-full">
-              </div>
-            </div>
-            <div class="item">
-              <div class="h-[212px] w-[215px] relative mx-3">
-                <div class="absolute h-6 w-12 bg-green-500 -left-2 top-2 px-3"><span
-                    class="text-white font-semibold">50%</span></div>
-                <div class="absolute h-6 w-7 bg-green-500 -left-1 top-[16px] rotate-[30deg] -z-50"></div>
-                <img src="https://resortsbd.com/upload/resort/1680157193_resort_image1.jpg" alt="banner"
-                  class="w-full h-full">
-              </div>
-            </div>
+          <div class="absolute h-6 w-auto discount right-2 top-2 px-3 z-50 rounded-md shadow-lg">
+            <span class="text-white font-semibold">50 %</span>
           </div>
         </div>
 
-        <div class="slider">
-          <div class="flex justify-between">
-            <div class="flex">
-              <h5 class="text-[#333333] font-medium font-rubik text-base">Hotel Discounts For You</h5>
-              <div class="px-2"><a href="#"
-                  class="text-sm hover:text-resort text-[#2a92c5] hover:underline font-medium font-rubik">View All</a>
-              </div>
-            </div>
-            <div class="flex space-x-4 py-2" data-target="num_2">
-              <button class="slide_left_btn h-7 w-8 bg-resort cursor-pointer flex justify-center items-center"><i
-                  class="fa-solid fa-arrow-left-long text-white flex justify-center items-center"></i></button>
-              <button class="slide_right_btn h-7 w-8 bg-resort cursor-pointer flex justify-center items-center"><i
-                  class="fa-solid fa-arrow-right-long text-white flex justify-center items-center"></i></button>
-            </div>
-          </div>
-          <div class="owl-carousel owl-theme" data-item_small="1" data-item_medium="2" data-item_large="3"
-            data-slider-name="num_2">
-            <div class="item">
-              <div class="h-[212px] w-[215px] relative mx-3">
-                <div class="absolute h-6 w-12 bg-green-500 -left-2 top-2 px-3"><span
-                    class="text-white font-semibold">50%</span></div>
-                <div class="absolute h-6 w-7 bg-green-500 -left-1 top-[16px] rotate-[30deg] -z-50"></div>
-                <img src="https://resortsbd.com/upload/resort/1680157193_resort_image1.jpg" alt="banner"
-                  class="w-full h-full">
-              </div>
-            </div>
-            <div class="item">
-              <div class="h-[212px] w-[215px] relative mx-3">
-                <div class="absolute h-6 w-12 bg-green-500 -left-2 top-2 px-3"><span
-                    class="text-white font-semibold">50%</span></div>
-                <div class="absolute h-6 w-7 bg-green-500 -left-1 top-[16px] rotate-[30deg] -z-50"></div>
-                <img src="https://placehold.co/250x250" alt="banner" class="w-full h-full">
-              </div>
-            </div>
-            <div class="item">
-              <div class="h-[212px] w-[215px] relative mx-3">
-                <div class="absolute h-6 w-12 bg-green-500 -left-2 top-2 px-3"><span
-                    class="text-white font-semibold">50%</span></div>
-                <div class="absolute h-6 w-7 bg-green-500 -left-1 top-[16px] rotate-[30deg] -z-50"></div>
-                <img src="https://resortsbd.com/upload/resort/1680157193_resort_image1.jpg" alt="banner"
-                  class="w-full h-full">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="slider">
-          <div class="flex justify-between">
-            <div class="flex">
-              <h5 class="text-[#333333] font-medium font-rubik text-base">Hotel Discounts For You</h5>
-              <div class="px-2"><a href="#"
-                  class="text-sm hover:text-resort text-[#2a92c5] hover:underline font-medium font-rubik">View All</a>
-              </div>
-            </div>
-            <div class="flex space-x-4 py-2" data-target="num_3">
-              <button class="slide_left_btn h-7 w-8 bg-resort cursor-pointer flex justify-center items-center"><i
-                  class="fa-solid fa-arrow-left-long text-white flex justify-center items-center"></i></button>
-              <button class="slide_right_btn h-7 w-8 bg-resort cursor-pointer flex justify-center items-center"><i
-                  class="fa-solid fa-arrow-right-long text-white flex justify-center items-center"></i></button>
-            </div>
-          </div>
-          <div class="owl-carousel owl-theme" data-item_small="1" data-item_medium="2" data-item_large="3"
-            data-slider-name="num_3">
-            <div class="item">
-              <div class="h-[212px] w-[215px] relative mx-3">
-                <div class="absolute h-6 w-12 bg-green-500 -left-2 top-2 px-3"><span
-                    class="text-white font-semibold">50%</span></div>
-                <div class="absolute h-6 w-7 bg-green-500 -left-1 top-[16px] rotate-[30deg] -z-50"></div>
-                <img src="https://resortsbd.com/upload/resort/1680157193_resort_image1.jpg" alt="banner"
-                  class="w-full h-full">
-              </div>
-            </div>
-            <div class="item">
-              <div class="h-[212px] w-[215px] relative mx-3">
-                <div class="absolute h-6 w-12 bg-green-500 -left-2 top-2 px-3"><span
-                    class="text-white font-semibold">50%</span></div>
-                <div class="absolute h-6 w-7 bg-green-500 -left-1 top-[16px] rotate-[30deg] -z-50"></div>
-                <img src="https://placehold.co/250x250" alt="banner" class="w-full h-full">
-              </div>
-            </div>
-            <div class="item">
-              <div class="h-[212px] w-[215px] relative mx-3">
-                <div class="absolute h-6 w-12 bg-green-500 -left-2 top-2 px-3"><span
-                    class="text-white font-semibold">50%</span></div>
-                <div class="absolute h-6 w-7 bg-green-500 -left-1 top-[16px] rotate-[30deg] -z-50"></div>
-                <img src="https://resortsbd.com/upload/resort/1680157193_resort_image1.jpg" alt="banner"
-                  class="w-full h-full">
-              </div>
-            </div>
-          </div>
-        </div>
+        <!-- item 2 -->
 
 
         <!-- footer for pc -->
         <div id="footer_for_pc"></div>
-       
-        
+      </div>
+      <div class="col-span-12 mx-5 md:col-span-3">
+        <div
+          class="bg-white xl:fixed xl:top-20 xl:w-[20rem] h-auto pb-3 md:pb-0 md:h-full rounded-md border-l-2 mx-auto border-gray-300 shadow-[0_0_8px_rgba(0,0,0,0.2)]">
 
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="room_info_modal" tabindex="-1" aria-hidden="true"
+    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative p-4 w-full max-w-2xl max-h-full">
+      <!-- Modal content -->
+      <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+        <!-- Modal header -->
+        <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+            room_info_modal
+          </h3>
+          <button type="button"
+            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+            data-modal-hide="default-modal">
+            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+            </svg>
+            <span class="sr-only">Close modal</span>
+          </button>
+        </div>
+        <!-- Modal body -->
+        <div class="p-4 md:p-5 space-y-4">
+          <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+            With less than a month to go before the European Union enacts new consumer privacy laws for its citizens,
+            companies around the world are updating their terms of service agreements to comply.
+          </p>
+        </div>
+        <!-- Modal footer -->
+        <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+          <button data-modal-hide="room_info_modal" type="button"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">I
+            accept</button>
+          <button data-modal-hide="room_info_modal" type="button"
+            class="ms-3 text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Decline</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="resort_info_modal" tabindex="-1" aria-hidden="true"
+    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative p-4 w-full max-w-2xl max-h-full">
+      <!-- Modal content -->
+      <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+        <!-- Modal header -->
+        <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+            resort_info_modal
+          </h3>
+          <button type="button"
+            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+            data-modal-hide="default-modal">
+            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+            </svg>
+            <span class="sr-only">Close modal</span>
+          </button>
+        </div>
+        <!-- Modal body -->
+        <div class="p-4 md:p-5 space-y-4">
+          <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+            With less than a month to go before the European Union enacts new consumer privacy laws for its citizens,
+            companies around the world are updating their terms of service agreements to comply.
+          </p>
+        </div>
+        <!-- Modal footer -->
+        <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+          <button data-modal-hide="resort_info_modal" type="button"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">I
+            accept</button>
+          <button data-modal-hide="resort_info_modal" type="button"
+            class="ms-3 text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Decline</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="child_policy_modal" tabindex="-1" aria-hidden="true"
+    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative p-4 w-full max-w-2xl max-h-full">
+      <!-- Modal content -->
+      <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+        <!-- Modal header -->
+        <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+            child_policy_modal
+          </h3>
+          <button type="button"
+            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+            data-modal-hide="default-modal">
+            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+            </svg>
+            <span class="sr-only">Close modal</span>
+          </button>
+        </div>
+        <!-- Modal body -->
+        <div class="p-4 md:p-5 space-y-4">
+          <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+            With less than a month to go before the European Union enacts new consumer privacy laws for its citizens,
+            companies around the world are updating their terms of service agreements to comply.
+          </p>
+        </div>
+        <!-- Modal footer -->
+        <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+          <button data-modal-hide="child_policy_modal" type="button"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">I
+            accept</button>
+          <button data-modal-hide="child_policy_modal" type="button"
+            class="ms-3 text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Decline</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="extra_bed_policy_modal" tabindex="-1" aria-hidden="true"
+    class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+    <div class="relative p-4 w-full max-w-2xl max-h-full">
+      <!-- Modal content -->
+      <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+        <!-- Modal header -->
+        <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600">
+          <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+            extra_bed_policy_modal
+          </h3>
+          <button type="button"
+            class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white"
+            data-modal-hide="default-modal">
+            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6" />
+            </svg>
+            <span class="sr-only">Close modal</span>
+          </button>
+        </div>
+        <!-- Modal body -->
+        <div class="p-4 md:p-5 space-y-4">
+          <p class="text-base leading-relaxed text-gray-500 dark:text-gray-400">
+            With less than a month to go before the European Union enacts new consumer privacy laws for its citizens,
+            companies around the world are updating their terms of service agreements to comply.
+          </p>
+        </div>
+        <!-- Modal footer -->
+        <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+          <button data-modal-hide="extra_bed_policy_modal" type="button"
+            class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">I
+            accept</button>
+          <button data-modal-hide="extra_bed_policy_modal" type="button"
+            class="ms-3 text-gray-500 bg-white hover:bg-gray-100 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-lg border border-gray-200 text-sm font-medium px-5 py-2.5 hover:text-gray-900 focus:z-10 dark:bg-gray-700 dark:text-gray-300 dark:border-gray-500 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-600">Decline</button>
+        </div>
       </div>
     </div>
   </div>
@@ -267,6 +342,7 @@
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.30.1/moment.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
   <script src="./assets/index.js"></script>
 </body>
 
