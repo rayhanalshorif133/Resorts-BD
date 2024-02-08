@@ -10,7 +10,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
     rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" />
 
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
@@ -32,7 +32,7 @@
         <h5 class="text-[#333333] font-medium font-rubik text-base">Searching RESORT's Name</h5>
         <!-- item 1 -->
         <div
-          class="h-auto w-full pr-5 transition-all duration-300 ease-in-out shadow-[0_0_8px_rgba(0,0,0,0.2)] group/item hover:bg-resort/10 relative z-50">
+          class="h-auto w-full pr-5 transition-all duration-300 ease-in-out shadow-[0_0_8px_rgba(0,0,0,0.2)] group/item hover:bg-resort/10 relative check_availability_item">
           <div class="flex h-52 space-x-4">
             <div class="w-72 h-52 relative">
               <div class="owl-carousel owl-theme" data-item_small="1" data-item_medium="1" data-item_large="1"
@@ -56,7 +56,7 @@
                   </div>
                 </div>
               </div>
-              <div class="absolute w-full justify-between px-4 cursor-pointer top-1 z-50 items-center h-full flex"
+              <div class="absolute w-full justify-between px-4 cursor-pointer top-1 z-10 items-center h-full flex"
                 data-target="check_availability_slider_num_1">
                 <button
                   class="slide_left_btn h-8 w-8 rounded-full bg-[#D9E8E5]/50 text-[#EEEEEE] hover:bg-resort-secondary-light flex items-center justify-center cursor-pointer">
@@ -94,13 +94,15 @@
                 <div class="flex justify-between">
                   <div class="flex space-x-4">
                     <button
-                      class="text-resort group/icon font-medium font-rubik transition-all duration-300 ease-in-out text-sm" data-modal-target="room_info_modal" data-modal-toggle="room_info_modal">Room
+                      class="text-resort group/icon font-medium font-rubik transition-all duration-300 ease-in-out text-sm"
+                      data-modal-target="room_info_modal" data-modal-toggle="room_info_modal">Room
                       Info
                       <i
                         class="fas fa-chevron-circle-right transition-all duration-500 ease-in-out group-hover/icon:translate-x-1"></i>
                     </button>
                     <button
-                      class="text-resort group/icon font-medium font-rubik transition-all duration-300 ease-in-out text-sm" data-modal-target="resort_info_modal" data-modal-toggle="resort_info_modal">Resort
+                      class="text-resort group/icon font-medium font-rubik transition-all duration-300 ease-in-out text-sm"
+                      data-modal-target="resort_info_modal" data-modal-toggle="resort_info_modal">Resort
                       Info
                       <i
                         class="fas fa-chevron-circle-right transition-all duration-500 ease-in-out group-hover/icon:translate-x-1"></i>
@@ -108,7 +110,7 @@
                   </div>
                   <div class="p-2">
                     <button
-                      class="selectBtn hover:scale-110 transition-all duration-300 ease-in-out text-white cursor-pointer font-rubik text-xs font-medium px-3 py-1 rounded-md">
+                      class="selectBtn check_availability_select_btn hover:scale-110 transition-all duration-300 ease-in-out text-white cursor-pointer font-rubik text-xs font-medium px-3 py-1 rounded-md">
                       Select
                     </button>
                   </div>
@@ -116,8 +118,7 @@
               </div>
             </div>
           </div>
-          <!--  -->
-          <div class="after_select_container px-5 flex w-full justify-between">
+          <div class="after_select_container hidden px-5 w-full justify-between">
             <div class="flex space-x-4 w-1/3">
               <button
                 class="text-resort group/icon font-medium font-rubik transition-all duration-300 ease-in-out text-sm block"
@@ -134,10 +135,9 @@
                 <div class="w-0 duration-500 ease-in-out transition-all bg-resort h-1 group-hover/icon:w-full"></div>
               </button>
             </div>
-            <form class="flex space-x-2 w-2/3" action="#">
+            <div class="flex space-x-2 w-2/3">
               <div>
-                <label for="set_person" data-max="20"
-                  class="text-resort-secondary font-rubik text-xs font-medium">Person</label>
+                <label for="set_person" class="text-resort-secondary font-rubik text-xs font-medium">Persons</label>
                 <input type="number" id="set_person" name="set_person"
                   class="w-full h-8 py-1 border border-gray-300 active:border-gray-400 focus:outline-none focus:border-gray-500 focus:border rounded-sm px-2"
                   placeholder="Enter person">
@@ -145,37 +145,170 @@
               <!-- extra person -->
               <div>
                 <label for="extra_person" data-max="2"
-                  class="text-resort-secondary font-rubik text-xs font-medium">Extra Person</label>
-                <input type="number" id="extra_person" name="extra_person"
+                  class="text-resort-secondary font-rubik text-xs font-medium">Extra Persons</label>
+                <input type="number" id="extra_person" name="extra_person" max="2"
                   class="w-full h-8 py-1 border border-gray-300 active:border-gray-400 focus:outline-none focus:border-gray-500 focus:border rounded-sm px-2"
                   placeholder="Enter extra person">
               </div>
               <div class="py-5">
-                <button type="submit"
+                <button type="button"
                   class="mt-2 hover:scale-110 confirmBtn transition-all duration-300 ease-in-out text-white cursor-pointer font-rubik text-xs font-medium px-3 py-1 rounded-md">
                   Confirm
                 </button>
               </div>
-            </form>
+            </div>
           </div>
-          <div class="absolute h-6 w-auto discount right-2 top-2 px-3 z-50 rounded-md shadow-lg">
-            <span class="text-white font-semibold">50 %</span>
+          <div
+            class="absolute h-auto w-auto right-[12px] top-2 px-3 rounded-xl bg-resort text-white font-semibold text-xs italic py-[2px]">
+            50 % off
           </div>
         </div>
 
         <!-- item 2 -->
-
-
-        <!-- footer for pc -->
-        <div id="footer_for_pc"></div>
-      </div>
-      <div class="col-span-12 mx-5 md:col-span-3">
         <div
-          class="bg-white xl:fixed xl:top-20 xl:w-[20rem] h-auto pb-3 md:pb-0 md:h-full rounded-md border-l-2 mx-auto border-gray-300 shadow-[0_0_8px_rgba(0,0,0,0.2)]">
-
+          class="h-auto w-full pr-5 transition-all duration-300 ease-in-out shadow-[0_0_8px_rgba(0,0,0,0.2)] group/item hover:bg-resort/10 relative check_availability_item">
+          <div class="flex h-52 space-x-4">
+            <div class="w-72 h-52 relative">
+              <div class="owl-carousel owl-theme" data-item_small="1" data-item_medium="1" data-item_large="1"
+                data-slider-name="check_availability_slider_num_1">
+                <div class="item">
+                  <div class="h-52 w-72">
+                    <img src="https://resortsbd.com/upload/resort/1680157193_resort_image1.jpg" alt="banner"
+                      class="w-full h-full">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="h-52 w-72">
+                    <img src="https://resortsbd.com/upload/resort/1680157193_resort_image1.jpg" alt="banner"
+                      class="w-full h-full">
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="h-52 w-72">
+                    <img src="https://resortsbd.com/upload/resort/1680157193_resort_image1.jpg" alt="banner"
+                      class="w-full h-full">
+                  </div>
+                </div>
+              </div>
+              <div class="absolute w-full justify-between px-4 cursor-pointer top-1 z-10 items-center h-full flex"
+                data-target="check_availability_slider_num_1">
+                <button
+                  class="slide_left_btn h-8 w-8 rounded-full bg-[#D9E8E5]/50 text-[#EEEEEE] hover:bg-resort-secondary-light flex items-center justify-center cursor-pointer">
+                  <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <button
+                  class="slide_right_btn h-8 w-8 rounded-full bg-[#D9E8E5]/50 text-[#EEEEEE] hover:bg-resort-secondary-light flex items-center justify-center cursor-pointer">
+                  <i class="fa-solid fa-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+            <div class="w-full px-1">
+              <div
+                class="flex w-full justify-between relative border-b border-[#e4e4e4] group-hover/item:border-[#c5c5c5] pb-2">
+                <div class="space-y-1">
+                  <h1 class="font-rubik text-base font-semibold text-resort py-3">Hobbit Standards 01</h1>
+                  <div class="py-2">
+                    <h2 class="font-rubik text-sm font-normal text-resort-secondary">Eco Couple Room</h2>
+                    <h3 class="font-rubik text-sm font-normal text-resort-secondary">2 Adults</h3>
+                  </div>
+                  <h4 class="font-rubik text-xs font-normal text-resort-secondary">Room Rates Inclusive of Ser. Chg. &
+                    VAT
+                  </h4>
+                  <h5 class="font-rubik text-xs font-normal text-resort-secondary">Breakfast is included in the room
+                    rates
+                  </h5>
+                </div>
+                <div class="px-2">
+                  <h1 class="mt-10 text-xs font-rubik flex justify-end line-through text-red-400">Tk. 6000</h1>
+                  <h2 class="text-sm font-rubik font-medium flex justify-end text-resort">Tk. 3000</h2>
+                  <p class="text-2xs font-rubik font-medium flex justify-end text-resort-secondary">Price Per Night</p>
+                </div>
+              </div>
+              <div class="py-2">
+                <div class="flex justify-between">
+                  <div class="flex space-x-4">
+                    <button
+                      class="text-resort group/icon font-medium font-rubik transition-all duration-300 ease-in-out text-sm"
+                      data-modal-target="room_info_modal" data-modal-toggle="room_info_modal">Room
+                      Info
+                      <i
+                        class="fas fa-chevron-circle-right transition-all duration-500 ease-in-out group-hover/icon:translate-x-1"></i>
+                    </button>
+                    <button
+                      class="text-resort group/icon font-medium font-rubik transition-all duration-300 ease-in-out text-sm"
+                      data-modal-target="resort_info_modal" data-modal-toggle="resort_info_modal">Resort
+                      Info
+                      <i
+                        class="fas fa-chevron-circle-right transition-all duration-500 ease-in-out group-hover/icon:translate-x-1"></i>
+                    </button>
+                  </div>
+                  <div class="p-2">
+                    <button
+                      class="selectBtn unAvailabileBtn hover:scale-110 transition-all duration-300 ease-in-out text-white cursor-pointer font-rubik text-xs font-medium px-3 py-1 rounded-md">
+                      Unavailable
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="after_select_container hidden px-5 w-full justify-between">
+            <div class="flex space-x-4 w-1/3">
+              <button
+                class="text-resort group/icon font-medium font-rubik transition-all duration-300 ease-in-out text-sm block"
+                data-modal-target="child_policy_modal" data-modal-toggle="child_policy_modal">
+                <i class="fas fa-child"></i>
+                Child Policy
+                <div class="w-0 duration-500 ease-in-out transition-all bg-resort h-1 group-hover/icon:w-full"></div>
+              </button>
+              <button
+                class="text-resort group/icon font-medium font-rubik transition-all duration-300 ease-in-out text-sm block"
+                data-modal-target="extra_bed_policy_modal" data-modal-toggle="extra_bed_policy_modal">
+                <i class="fas fa-folder-plus"></i>
+                Extra Bed Policy
+                <div class="w-0 duration-500 ease-in-out transition-all bg-resort h-1 group-hover/icon:w-full"></div>
+              </button>
+            </div>
+            <div class="flex space-x-2 w-2/3">
+              <div>
+                <label for="set_person" class="text-resort-secondary font-rubik text-xs font-medium">Persons</label>
+                <input type="number" id="set_person" name="set_person"
+                  class="w-full h-8 py-1 border border-gray-300 active:border-gray-400 focus:outline-none focus:border-gray-500 focus:border rounded-sm px-2"
+                  placeholder="Enter person">
+              </div>
+              <!-- extra person -->
+              <div>
+                <label for="extra_person" data-max="2"
+                  class="text-resort-secondary font-rubik text-xs font-medium">Extra Persons</label>
+                <input type="number" id="extra_person" name="extra_person" max="2"
+                  class="w-full h-8 py-1 border border-gray-300 active:border-gray-400 focus:outline-none focus:border-gray-500 focus:border rounded-sm px-2"
+                  placeholder="Enter extra person">
+              </div>
+              <div class="py-5">
+                <button type="button"
+                  class="mt-2 hover:scale-110 confirmBtn transition-all duration-300 ease-in-out text-white cursor-pointer font-rubik text-xs font-medium px-3 py-1 rounded-md">
+                  Confirm
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="absolute h-auto w-auto right-[12px] top-2 px-3 rounded-xl bg-resort text-white font-semibold text-xs italic py-[2px]">
+            50 % off
+          </div>
         </div>
+
+
+      <!-- footer for pc -->
+      <div id="footer_for_pc"></div>
+    </div>
+    <div class="col-span-12 mx-5 md:col-span-3">
+      <div
+        class="bg-white xl:fixed xl:top-20 xl:w-[20rem] h-auto pb-3 md:pb-0 md:h-full rounded-md border-l-2 mx-auto border-gray-300 shadow-[0_0_8px_rgba(0,0,0,0.2)]">
+
       </div>
     </div>
+  </div>
   </div>
   <div id="room_info_modal" tabindex="-1" aria-hidden="true"
     class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
