@@ -127,7 +127,7 @@ input[type='number']::-webkit-outer-spin-button {
 
 
     .nav {
-        @apply shadow-sm h-auto md:h-[4.2rem] sticky top-0 bg-white z-50;
+        @apply shadow-sm w-full h-auto md:h-[4.2rem] sticky top-0 bg-white z-50;
     }
 
     .nav-icon {
