@@ -1799,6 +1799,11 @@ video {
   padding-bottom: 5px;
 }
 
+.px-20 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
 .pb-1 {
   padding-bottom: 0.25rem;
 }
@@ -2515,6 +2520,11 @@ input[type='number']::-webkit-outer-spin-button {
     flex-direction: row;
   }
 
+  .sm\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
   .sm\:text-\[0\.8rem\] {
     font-size: 0.8rem;
   }
@@ -2683,6 +2693,11 @@ input[type='number']::-webkit-outer-spin-button {
     --tw-space-y-reverse: 0;
     margin-top: calc(0px * calc(1 - var(--tw-space-y-reverse)));
     margin-bottom: calc(0px * var(--tw-space-y-reverse));
+  }
+
+  .lg\:px-0 {
+    padding-left: 0px;
+    padding-right: 0px;
   }
 }
 
