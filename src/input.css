@@ -232,7 +232,7 @@ input[type='number']::-webkit-outer-spin-button {
 
     .search_item .left_item div h1{ @apply font-rubik text-base font-medium text-stone-700 truncate; }
     .search_item .left_item div h2{ @apply space-x-1; }
-    .search_item .left_item div h3{ @apply space-x-1 float-start text-start flex md:hidden; }
+    .search_item .left_item div h3{ @apply space-x-1 text-start flex md:hidden; }
 
 
 
