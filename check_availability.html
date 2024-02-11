@@ -55,25 +55,13 @@
 
         <!-- item 1 -->
         <div
-          class="h-auto w-full pr-5 transition-all duration-300 ease-in-out shadow-[0_0_8px_rgba(0,0,0,0.2)] group/item hover:bg-resort/10 relative check_availability_item">
-          <div class="flex h-52 space-x-4">
-            <div class="w-72 h-52 relative">
+          class="h-auto w-full transition-all duration-300 ease-in-out shadow-[0_0_8px_rgba(0,0,0,0.2)] group/item hover:bg-resort/10 relative check_availability_item p-2.5">
+          <div class="flex flex-col md:flex-row h-auto md:h-52 space-x-4">
+            <div class="w-full md:w-72 h-52 relative">
               <div class="owl-carousel owl-theme" data-item_small="1" data-item_medium="1" data-item_large="1"
                 data-slider-name="check_availability_slider_num_1">
                 <div class="item">
-                  <div class="h-52 w-72">
-                    <img src="https://resortsbd.com/upload/resort/1680157193_resort_image1.jpg" alt="banner"
-                      class="w-full h-full">
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="h-52 w-72">
-                    <img src="https://resortsbd.com/upload/resort/1680157193_resort_image1.jpg" alt="banner"
-                      class="w-full h-full">
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="h-52 w-72">
+                  <div class="h-52 w-full md:w-72">
                     <img src="https://resortsbd.com/upload/resort/1680157193_resort_image1.jpg" alt="banner"
                       class="w-full h-full">
                   </div>
@@ -182,32 +170,27 @@
             </div>
           </div>
           <div
-            class="absolute h-auto w-auto right-[12px] top-2 px-3 rounded-xl bg-resort text-white font-semibold text-xs italic py-[2px]">
+            class="md:block hidden absolute h-auto w-auto right-[12px] top-2 px-3 rounded-xl bg-resort text-white font-semibold text-xs italic py-[2px]">
             50 % off
           </div>
         </div>
 
+        <!-- 
+          <button
+                      class="selectBtn unAvailabileBtn hover:scale-110 transition-all duration-300 ease-in-out text-white cursor-pointer font-rubik text-xs font-medium px-3 py-1 rounded-md">
+                      Unavailable
+                    </button>
+         -->
+
         <!-- item 2 -->
         <div
-          class="h-auto w-full pr-5 transition-all duration-300 ease-in-out shadow-[0_0_8px_rgba(0,0,0,0.2)] group/item hover:bg-resort/10 relative check_availability_item">
-          <div class="flex h-52 space-x-4">
-            <div class="w-72 h-52 relative">
+          class="h-auto w-full transition-all duration-300 ease-in-out shadow-[0_0_8px_rgba(0,0,0,0.2)] group/item hover:bg-resort/10 relative check_availability_item p-2.5">
+          <div class="flex flex-col md:flex-row h-auto md:h-52 space-x-4">
+            <div class="w-full md:w-72 h-52 relative">
               <div class="owl-carousel owl-theme" data-item_small="1" data-item_medium="1" data-item_large="1"
                 data-slider-name="check_availability_slider_num_1">
                 <div class="item">
-                  <div class="h-52 w-72">
-                    <img src="https://resortsbd.com/upload/resort/1680157193_resort_image1.jpg" alt="banner"
-                      class="w-full h-full">
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="h-52 w-72">
-                    <img src="https://resortsbd.com/upload/resort/1680157193_resort_image1.jpg" alt="banner"
-                      class="w-full h-full">
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="h-52 w-72">
+                  <div class="h-52 w-full md:w-72">
                     <img src="https://resortsbd.com/upload/resort/1680157193_resort_image1.jpg" alt="banner"
                       class="w-full h-full">
                   </div>
@@ -267,8 +250,8 @@
                   </div>
                   <div class="p-2">
                     <button
-                      class="selectBtn unAvailabileBtn hover:scale-110 transition-all duration-300 ease-in-out text-white cursor-pointer font-rubik text-xs font-medium px-3 py-1 rounded-md">
-                      Unavailable
+                      class="selectBtn check_availability_select_btn hover:scale-110 transition-all duration-300 ease-in-out text-white cursor-pointer font-rubik text-xs font-medium px-3 py-1 rounded-md">
+                      Select
                     </button>
                   </div>
                 </div>
@@ -316,16 +299,107 @@
             </div>
           </div>
           <div
-            class="absolute h-auto w-auto right-[12px] top-2 px-3 rounded-xl bg-resort text-white font-semibold text-xs italic py-[2px]">
+            class="md:block hidden absolute h-auto w-auto right-[12px] top-2 px-3 rounded-xl bg-resort text-white font-semibold text-xs italic py-[2px]">
             50 % off
           </div>
         </div>
 
 
+        <div class="h-auto w-full lg:hidden">
+          <div
+            class="bg-white h-auto pb-0 md:pb-0 md:h-fit rounded-md border-l-2 mx-auto border-gray-300 shadow-[0_0_8px_rgba(0,0,0,0.2)] rounded-b-lg mt-8">
+            <div class="px-5 bg-[#eff4ff] py-3 shadow-[1px_2px_1px_rgba(0,0,0,0.1)]">
+              <h2 class="font-rubik text-sm font-semibold text-resort">Selected Room</h2>
+            </div>
+            <div class="w-full py-2 space-y-1">
+              <div class="grid grid-cols-7 px-2">
+                <div class="col-span-3">
+                  <div class="flex space-x-1">
+                    <i class="fa fa-tag flex items-center text-xs"></i>
+                    <h1 class="font-rubik text-xs font-semibold text-resort py-3">Room</h1>
+                  </div>
+                </div>
+                <div class="col-span-2">
+                  <div class="flex space-x-1">
+                    <h1 class="font-rubik text-xs font-semibold text-resort py-3">Checkin</h1>
+                  </div>
+                </div>
+                <div class="col-span-2">
+                  <div class="flex space-x-1 justify-end">
+                    <h1 class="font-rubik text-xs font-semibold text-resort py-3">amount</h1>
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid-cols-7 px-2 py-1">
+                <div class="col-span-3">
+                  <div class="flex space-x-1">
+                    <i class="fa fa-trash flex items-center text-xs"></i>
+                    <h1 class="font-rubik text-xs font-semibold text-resort">Room num 1</h1>
+                  </div>
+                </div>
+                <div class="col-span-2">
+                  <div class="flex space-x-1">
+                    <h1 class="font-rubik text-xs font-semibold text-resort">
+                      08/02/2024
+                    </h1>
+                  </div>
+                </div>
+                <div class="col-span-2">
+                  <div class="flex space-x-1 justify-end">
+                    <h1 class="font-rubik text-xs font-semibold text-resort">
+                      Tk. 2000
+                    </h1>
+                  </div>
+                </div>
+              </div>
+              <div class="grid grid-cols-7 px-2 py-1">
+                <div class="col-span-3">
+                  <div class="flex space-x-1">
+                    <i class="fa fa-trash flex items-center text-xs"></i>
+                    <h1 class="font-rubik text-xs font-semibold text-resort">Room num 2</h1>
+                  </div>
+                </div>
+                <div class="col-span-2">
+                  <div class="flex space-x-1">
+                    <h1 class="font-rubik text-xs font-semibold text-resort">
+                      12/02/2024
+                    </h1>
+                  </div>
+                </div>
+                <div class="col-span-2">
+                  <div class="flex space-x-1 justify-end">
+                    <h1 class="font-rubik text-xs font-semibold text-resort">
+                      Tk. 2700
+                    </h1>
+                  </div>
+                </div>
+              </div>
+              <hr class="border-t border-gray-300">
+              <div class="grid grid-cols-2 px-2 py-1">
+                <div class="col-span-1">
+                  <div class="flex space-x-1">
+                    <h1 class="font-rubik text-xs font-semibold text-resort">Total</h1>
+                  </div>
+                </div>
+                <div class="col-span-1">
+                  <div class="flex space-x-1 justify-end">
+                    <h1 class="font-rubik text-xs font-semibold text-resort">
+                      Tk. 4700
+                    </h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <a href="#"
+              class="flex text-center justify-center rounded-b-lg w-full text-white bg-resort/90 hover:bg-resort py-1 font-rubik text-base">
+              Book Now
+            </a>
+          </div>
+        </div>
         <!-- footer for pc -->
         <div id="footer_for_pc"></div>
       </div>
-      <div class="h-auto w-full md:w-2/3 lg:w-1/3 px-3">
+      <div class="h-auto w-full hidden lg:block lg:w-1/3 px-3">
         <div
           class="bg-white xl:fixed xl:top-20 xl:w-[24rem] h-auto pb-3 md:pb-0 md:h-fit rounded-md border-l-2 mx-auto border-gray-300 shadow-[0_0_8px_rgba(0,0,0,0.2)] rounded-b-lg mt-8">
           <div class="px-5 bg-[#eff4ff] py-3 shadow-[1px_2px_1px_rgba(0,0,0,0.1)]">

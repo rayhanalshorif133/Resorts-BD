@@ -221,5 +221,19 @@ input[type='number']::-webkit-outer-spin-button {
     }
 
 
+    /* search */
+    .search_item{
+        @apply w-full h-auto xl:h-48 bg-white shadow-sm hover:shadow-lg;
+    }
+
+    .search_item .left_item{
+        @apply flex md:hidden justify-between p-3;
+    }
+
+    .search_item .left_item div h1{ @apply font-rubik text-base font-medium text-stone-700 truncate; }
+    .search_item .left_item div h2{ @apply space-x-1; }
+    .search_item .left_item div h3{ @apply space-x-1 float-start text-start flex md:hidden; }
+
+
 
 }
