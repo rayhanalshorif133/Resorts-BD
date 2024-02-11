@@ -9,7 +9,20 @@ $(() => {
     handleFooterBtn();
     handleAuthForm();
     handleAfterSelectContainer();
+    handleBookNowBtn();
 });
+
+const handleBookNowBtn = () => {
+    $('#book_now_btn').click(function () {
+        $("#selected_room_panel").toggleClass('translate-x-full');
+        $(this).toggleClass('translate-x-full');
+
+        setTimeout(() => {
+            $("#selected_room_panel").toggleClass('translate-x-full');
+            $(this).toggleClass('translate-x-full');
+        }, 2000);
+    });
+};
 
 const handleAfterSelectContainer = () => {
 
@@ -50,11 +63,7 @@ const handleAuthForm = () => {
 const handleFooterBtn = () => {
     $(".pc_footer button").click(function () {
         $(".pc_footer button").removeClass("border-b-2");
-        // $(".pc_footer button").find('span').removeClass("text-resort font-medium");
-        // $(".pc_footer button").find('i').removeClass("fa-sort-down mt-1 mb-1").addClass("mt-1 fa-sort-up");
         $(this).toggleClass("border-b-2");
-        // $(this).find('span').toggleClass("text-resort font-medium");
-        // $(this).find('i').toggleClass("fa-sort-up fa-sort-down mt-1 mb-1");
 
         $('.pc_footer_content').find('.company_information').toggleClass('hidden h-0 h-auto');
     });
