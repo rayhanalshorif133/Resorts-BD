@@ -131,7 +131,7 @@ input[type='number']::-webkit-outer-spin-button {
     }
 
     .nav-icon {
-        @apply flex space-x-10 lg:space-x-12 xl:space-x-14 py-3;
+        @apply space-x-10 lg:space-x-12 xl:space-x-14 py-3;
     }
 
     .nav-icon a {

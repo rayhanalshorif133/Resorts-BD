@@ -21,28 +21,42 @@
 
 <body class="bg-[#EEEEEE]">
   <!-- header:start -->
-  <nav class="nav z-50">
-    <div class="max-w-7xl mx-auto">
-      <div class="flex justify-between">
-        <div class="flex flex-col md:flex-row space-x-17 xl:space-x-16 py-2 mx-auto md:mx-0">
-          <a href="./index.html" class="mx-auto pl-10 md:pl-0 md:mx-0">
-            <img src="./assets/images/logo.png" alt="logo" class="w-auto h-10 md:h-12">
+  <nav class="nav">
+    <div class="w-full lg:max-w-7xl mx-auto">
+      <div class="flex w-full justify-between">
+        <a href="./index.html" class="w-full absolute left-2 top-4 sm:hidden">
+          <i class="fa-solid text-xl fa-arrow-left text-resort"></i>
+        </a>
+        <div class="flex flex-col md:flex-row  xl:space-x-16 py-2 mx-auto md:mx-0 relative">
+          <a href="./index.html" class="flex justify-center w-full">
+            <img src="./assets/images/logo.png" alt="logo" class="flex justify-center w-auto h-10 md:h-12">
           </a>
-          <div class="nav-icon">
+          <div class="mx-auto w-full justify-center sm:hidden">
+            <p class="text-center text-[#333333] font-rubik text-sm">Goa</p>
+            <p class="text-center text-resort-secondary-light  uppercase space-x-px">
+              <span class="font-rubik text-2xs">Tue, 30 Jan</span> -
+              <span class="font-rubik text-2xs">Thu, 1 Feb |</span>
+              <span class="font-rubik text-2xs">(2 nights) |</span>
+              <span class="font-rubik text-2xs">1 Room |</span>
+              <span class="font-rubik text-2xs">2 adults |</span>
+            </p>
+          </div>
+          <div class="nav-icon hidden sm:flex relative">
             <a href="./index.html" class="group w-14 md:w-10">
               <div class="box bg-resort">
                 <i class="fa-solid fa-house text-white"></i>
               </div>
               <i class="fa-solid fa-house text-resort hidden md:block"></i>
-              <h3 class="text-resort left-[6px]">Resorts</h3>
-              <div class="under_line w-14 bg-resort -left-1"></div>
+              <h3 class="text-resort left-[6px] sm:text-sm">Resorts</h3>
+              <div class="under_line w-14 bg-resort sm:-left-1"></div>
             </a>
             <a href="./boats.html" class="group w-10">
               <div class="box hover:bg-resort group/icon">
                 <i class="fa-solid fa-ship text-resort-secondary group-hover/icon:text-white"></i>
               </div>
               <i class="fas fa-ship group-hover:text-resort text-resort-secondary hidden md:block"></i>
-              <h3 class="group-hover:text-resort text-resort-secondary w-14 -left-[9px] md:-left-[5px]">Boats</h3>
+              <h3 class="group-hover:text-resort text-resort-secondary w-14 -left-[9px] md:-left-[5px]">Boats
+              </h3>
               <div class="under_line w-0 group-hover:w-10 bg-resort left-0"></div>
             </a>
             <a href="./ships.html" class="group w-10">
@@ -83,13 +97,15 @@
                     <div class="hidden group-hover/account:flex group/iconName details">
                       <i
                         class="fa-solid fa-caret-right group-hover/iconName:text-resort-secondary group-hover/iconName:translate-x-2"></i>
-                      <h3 class="group-hover/iconName:text-resort-secondary group-hover/iconName:translate-x-2">User
+                      <h3 class="group-hover/iconName:text-resort-secondary group-hover/iconName:translate-x-2">
+                        User
                         Name</h3>
                     </div>
                     <div class="hidden group-hover/account:flex group/iconName details">
                       <i
                         class="fa-solid fa-caret-right group-hover/iconName:text-resort-secondary group-hover/iconName:translate-x-2"></i>
-                      <h3 class="group-hover/iconName:text-resort-secondary group-hover/iconName:translate-x-2">My
+                      <h3 class="group-hover/iconName:text-resort-secondary group-hover/iconName:translate-x-2">
+                        My
                         Booking</h3>
                     </div>
                   </div>
@@ -101,12 +117,14 @@
               </div>
             </li>
             <li class="mr-4">
-              <a href="#" class="text-gray-600 text-sm transition-all duration-500 ease-in-out font-medium hover:text-gray-800">
+              <a href="#"
+                class="text-gray-600 text-sm transition-all duration-500 ease-in-out font-medium hover:text-gray-800">
                 Support
               </a>
             </li>
             <li class="mr-4">
-              <a href="#" class="text-gray-600 text-sm transition-all duration-500 ease-in-out font-medium hover:text-gray-800">Contact</a>
+              <a href="#"
+                class="text-gray-600 text-sm transition-all duration-500 ease-in-out font-medium hover:text-gray-800">Contact</a>
             </li>
           </ul>
         </div>
@@ -293,8 +311,8 @@
         </div>
       </div>
 
-      <div class="col-span-4 px-10 xl:px-0 xl:col-span-3 py-2">
-        <div class="mx-auto w-full justify-center">
+      <div class="col-span-4 px-1 xs:px-2 sm:px-10 xl:px-0 xl:col-span-3 py-2">
+        <div class="mx-auto w-full justify-center  hidden sm:block">
           <p class="text-center text-[#333333] font-rubik text-sm">Goa</p>
           <p class="text-center text-resort-secondary-light font-rubik text-xs uppercase space-x-1">
             <span>Tue, 30 Jan</span> -
