@@ -28,14 +28,14 @@ const handleAfterSelectContainer = () => {
 
     $(".check_availability_select_btn").click(function () {
         const select_availability = $(this).closest('.check_availability_item').find('.after_select_container');
-        select_availability.hasClass('hidden') ? 
-        select_availability.removeClass('hidden').addClass('flex') : after_select_container.addClass('hidden').removeClass('flex');
+        select_availability.hasClass('hidden') ?
+            select_availability.removeClass('hidden').addClass('flex') : after_select_container.addClass('hidden').removeClass('flex');
         $(this).addClass('hidden');
     });
 
 
 
-}; 
+};
 
 const handleAutoInculdeFiles = () => {
     $("#nav_bar_content").load("./components/nav_bar_content.html");
@@ -145,17 +145,17 @@ const handleClickSelectDateRange = () => {
         <div>  
               <h5 class="text-sm text-resort-secondary-light font-rubik">Check-in</h5>
                 <div class="border-b border-resort-secondary cursor-pointer checkDateRangeInput">
-                  <input id="start_date_value" name="start_date_value" class="w-fit font-rubik text-black font-bold text-2xl focus:outline-none"
+                  <input id="start_date_value" name="start_date_value" class="w-fit font-rubik text-black font-bold text-sm sm:text-2xl focus:outline-none"
                     value="${startDate}" />
-                  <p class="text-base text-resort-secondary font-medium font-rubik">Thursday</p>
+                  <p class="text-xs sm:text-base text-resort-secondary font-medium font-rubik">Thursday</p>
                 </div>
         </div>
         <div>
                 <h5 class="text-sm text-resort-secondary-light font-rubik">Check-out</h5>
                 <div class="border-b border-resort-secondary cursor-pointer checkDateRangeInput">
-                  <input id="end_date_value" name="end_date_value" class="w-fit font-rubik text-black font-bold text-2xl focus:outline-none"
+                  <input id="end_date_value" name="end_date_value" class="w-fit font-rubik text-black font-bold text-sm sm:text-2xl focus:outline-none"
                     value="${endDate}" />
-                  <p class="text-base text-resort-secondary font-medium font-rubik">Thursday</p>
+                  <p class="text-xs sm:text-base text-resort-secondary font-medium font-rubik">Thursday</p>
                 </div>
             </div>
         `;
