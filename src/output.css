@@ -1483,6 +1483,10 @@ video {
   grid-template-columns: repeat(7, minmax(0, 1fr));
 }
 
+.grid-cols-6 {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+}
+
 .flex-col {
   flex-direction: column;
 }
@@ -2868,6 +2872,10 @@ input[type='number']::-webkit-outer-spin-button {
 
   .sm\:mt-14 {
     margin-top: 3.5rem;
+  }
+
+  .sm\:block {
+    display: block;
   }
 
   .sm\:flex {
