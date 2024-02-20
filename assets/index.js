@@ -15,12 +15,49 @@ $(() => {
 
 
 const handleMobileSearchFilter = () => {
-    $(".mobileSearchFilterBtn").click(function(){
+    $(".mobileSearchFilterBtn").click(function () {
         $(".mobileSearchFilterBtn").addClass('bg-filter-nav-color').removeClass('bg-gray-200');
         $(this).removeClass('bg-filter-nav-color').addClass('bg-gray-200');
-        console.log('clicked');
+        $(".mobileSearchFilterBtn").each(function (item) {
+            var target = $(this).attr('data-target');
+            target = '#' + target;
+            $(target).addClass('hidden');
+        });
+        var target = $(this).attr('data-target');
+        $(this).toggleClass(target);
+        target = '#' + target;
+        $(target).toggleClass('hidden');
+    });
+
+    $(document).on('click', '.hotel_name_filter_input', function () {
+        $(".mobileSearchFilterBtn").addClass('bg-filter-nav-color').removeClass('bg-gray-200');
+        $(".mobileSearchFilterBtn").each(function (item) {
+            var target = $(this).attr('data-target');
+            target = '#' + target;
+            $(target).addClass('hidden');
+        });
+    });
+    
+    $(document).on('click', '.price_filter_input', function () {
+        $(".mobileSearchFilterBtn").addClass('bg-filter-nav-color').removeClass('bg-gray-200');
+        $(".mobileSearchFilterBtn").each(function (item) {
+            var target = $(this).attr('data-target');
+            target = '#' + target;
+            $(target).addClass('hidden');
+        });
+    });
+    
+    $(document).on('click', '.star_rating_filter_input', function () {
+        $(".mobileSearchFilterBtn").addClass('bg-filter-nav-color').removeClass('bg-gray-200');
+        $(".mobileSearchFilterBtn").each(function (item) {
+            var target = $(this).attr('data-target');
+            target = '#' + target;
+            $(target).addClass('hidden');
+        });
     });
 };
+
+
 
 
 const handleBookNowBtn = () => {
