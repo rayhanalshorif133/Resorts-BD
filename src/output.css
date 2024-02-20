@@ -535,7 +535,7 @@ video {
 }
 
 .nav {
-  position: sticky;
+  position: fixed;
   top: 0px;
   z-index: 100;
   height: auto;
@@ -1207,11 +1207,6 @@ video {
   margin-bottom: 1.25rem;
 }
 
-.my-1 {
-  margin-top: 0.25rem;
-  margin-bottom: 0.25rem;
-}
-
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -1280,6 +1275,10 @@ video {
 
 .mt-px {
   margin-top: 1px;
+}
+
+.mt-24 {
+  margin-top: 6rem;
 }
 
 .block {
