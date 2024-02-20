@@ -16,45 +16,33 @@ $(() => {
 
 const handleMobileSearchFilter = () => {
     $(".mobileSearchFilterBtn").click(function () {
-        $(".mobileSearchFilterBtn").addClass('bg-filter-nav-color').removeClass('bg-gray-200');
-        $(this).removeClass('bg-filter-nav-color').addClass('bg-gray-200');
-        $(".mobileSearchFilterBtn").each(function (item) {
-            var target = $(this).attr('data-target');
-            target = '#' + target;
-            $(target).addClass('hidden');
-        });
+        $(".mobileSearchFilterBtn").removeClass('bg-gray-200');
+        $(this).toggleClass('bg-gray-200');
         var target = $(this).attr('data-target');
         $(this).toggleClass(target);
+        $(".mobileSearchFilterBtn").each(function () {
+            if ($(this).attr('data-target') !== target) {
+                var target = $(this).attr('data-target');
+                target = '#' + target;
+                $(target).addClass('hidden');
+            }
+        });
         target = '#' + target;
         $(target).toggleClass('hidden');
     });
 
-    $(document).on('click', '.hotel_name_filter_input', function () {
-        $(".mobileSearchFilterBtn").addClass('bg-filter-nav-color').removeClass('bg-gray-200');
-        $(".mobileSearchFilterBtn").each(function (item) {
-            var target = $(this).attr('data-target');
-            target = '#' + target;
-            $(target).addClass('hidden');
-        });
+    $(document).on('click', function (event) {
+        // is not click on $(".mobileSearchFilterBtn")
+        if (!$(event.target).closest('.mobileSearchFilterBtn').length) {
+            $(".mobileSearchFilterBtn").removeClass('bg-gray-200');
+            $(".mobileSearchFilterBtn").each(function () {
+                var target = $(this).attr('data-target');
+                target = '#' + target;
+                $(target).addClass('hidden');
+            });
+        }
     });
     
-    $(document).on('click', '.price_filter_input', function () {
-        $(".mobileSearchFilterBtn").addClass('bg-filter-nav-color').removeClass('bg-gray-200');
-        $(".mobileSearchFilterBtn").each(function (item) {
-            var target = $(this).attr('data-target');
-            target = '#' + target;
-            $(target).addClass('hidden');
-        });
-    });
-    
-    $(document).on('click', '.star_rating_filter_input', function () {
-        $(".mobileSearchFilterBtn").addClass('bg-filter-nav-color').removeClass('bg-gray-200');
-        $(".mobileSearchFilterBtn").each(function (item) {
-            var target = $(this).attr('data-target');
-            target = '#' + target;
-            $(target).addClass('hidden');
-        });
-    });
 };
 
 

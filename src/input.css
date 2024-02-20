@@ -159,7 +159,7 @@ input[type='number']::-webkit-outer-spin-button {
     }
 
     .mobileSearchFilterBtn{
-        @apply bg-filter-nav-color w-full duration-200 ease-in-out transition-all text-[#9E9E9E] h-full flex justify-center items-center font-rubik text-sm font-normal;
+        @apply bg-filter-nav-color w-full  text-[#9E9E9E] h-full flex justify-center items-center font-rubik text-sm font-normal;
     }
 
     .header-account {
