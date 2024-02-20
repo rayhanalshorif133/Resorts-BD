@@ -10,7 +10,18 @@ $(() => {
     handleAuthForm();
     handleAfterSelectContainer();
     handleBookNowBtn();
+    handleMobileSearchFilter();
 });
+
+
+const handleMobileSearchFilter = () => {
+    $(".mobileSearchFilterBtn").click(function(){
+        $(".mobileSearchFilterBtn").addClass('bg-filter-nav-color').removeClass('bg-gray-200');
+        $(this).removeClass('bg-filter-nav-color').addClass('bg-gray-200');
+        console.log('clicked');
+    });
+};
+
 
 const handleBookNowBtn = () => {
     $('#book_now_btn').click(function () {

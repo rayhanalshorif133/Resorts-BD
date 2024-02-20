@@ -158,6 +158,10 @@ input[type='number']::-webkit-outer-spin-button {
         @apply text-2xs sm:text-sm flex items-center justify-center mx-auto h-full;
     }
 
+    .mobileSearchFilterBtn{
+        @apply bg-filter-nav-color w-full duration-200 ease-in-out transition-all text-[#9E9E9E] h-full flex justify-center items-center font-rubik text-sm font-normal;
+    }
+
     .header-account {
         @apply mr-4 space-x-2 relative;
     }
