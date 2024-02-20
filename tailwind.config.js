@@ -21,6 +21,7 @@ module.exports = {
         'resort-secondary': '#666666',
         'resort-secondary-light': '#a7a7a7',
         'search-border-color': '#E2E2E2',
+        'filter-nav-color': '#fafafa',
       },
       fontSize: {
         '2xs': '10px',
@@ -28,6 +29,11 @@ module.exports = {
       },
       zIndex: {
         '100': '100',
+        '150': '150',
+        '200': '200',
+        '220': '220',
+        '250': '250',
+        '300': '300',
       },
     }
   },
