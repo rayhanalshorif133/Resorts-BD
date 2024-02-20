@@ -32,8 +32,11 @@ const handleMobileSearchFilter = () => {
     });
 
     $(document).on('click', function (event) {
-        // is not click on $(".mobileSearchFilterBtn")
-        if (!$(event.target).closest('.mobileSearchFilterBtn').length) {
+        if (!$(event.target).closest('.mobileSearchFilterBtn').length && 
+        !$(event.target).closest('#hotel_name_filter_input').length &&
+        !$(event.target).closest('#price_filter_input').length &&
+        !$(event.target).closest('#star_rating_filter_input').length        
+        ) {
             $(".mobileSearchFilterBtn").removeClass('bg-gray-200');
             $(".mobileSearchFilterBtn").each(function () {
                 var target = $(this).attr('data-target');
