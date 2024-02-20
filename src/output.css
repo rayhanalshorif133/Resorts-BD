@@ -1278,6 +1278,10 @@ video {
   margin-top: 2px;
 }
 
+.mt-px {
+  margin-top: 1px;
+}
+
 .block {
   display: block;
 }
