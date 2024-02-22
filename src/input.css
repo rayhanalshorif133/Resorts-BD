@@ -158,6 +158,7 @@ input[type='number']::-webkit-outer-spin-button {
         @apply text-2xs sm:text-sm flex items-center justify-center mx-auto h-full;
     }
 
+    .mobileSearchFilterCheckAvaiabilityBtn,
     .mobileSearchFilterBtn{
         @apply bg-filter-nav-color w-full  text-[#9E9E9E] h-full flex justify-center items-center font-rubik text-sm font-normal;
     }

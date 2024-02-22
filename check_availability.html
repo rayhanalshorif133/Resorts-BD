@@ -24,7 +24,7 @@
   <nav class="nav">
     <div class="w-full lg:max-w-7xl mx-auto">
       <div class="flex w-full justify-between">
-        <a href="./search.html" class="w-full absolute left-4 top-4 sm:hidden">
+        <a href="./index.html" class="w-full absolute left-4 top-4 sm:hidden">
           <i class="fa-solid text-xl fa-arrow-left text-resort"></i>
         </a>
         <div class="flex flex-col md:flex-row  xl:space-x-16 py-2 mx-auto md:mx-0 relative">
@@ -132,9 +132,30 @@
     </div>
   </nav>
 
+  <!-- filter -->
+  <div class="w-full fixed h-auto sm:hidden bg-[#EEEEEE] shadow-lg z-100 overflow-x-hidden">
+    <div class="w-full h-9 bg-filter-nav-color flex">
+      <div class="h-full w-1/3 cursor-pointer group/item">
+        <button class="mobileSearchFilterCheckAvaiabilityBtn group-hover/item:border-b-2 border-resort">
+          <span class="flex items-center mt-px">All Room</span>
+        </button>
+      </div>
+      <div class="h-full w-1/3 cursor-pointer group/item">
+        <button class="mobileSearchFilterCheckAvaiabilityBtn group-hover/item:border-b-2 border-resort">
+          <span class="flex items-center mt-px">Couple Room</span>
+        </button>
+      </div>
+      <div class="h-full w-1/3 cursor-pointer group/item">
+        <button class="mobileSearchFilterCheckAvaiabilityBtn group-hover/item:border-b-2 border-resort">
+          <span class="flex items-center mt-px">Family</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
   <!-- header:end -->
   <!-- content:start -->
-  <div class="w-full lg:max-w-7xl mx-auto h-auto relative">
+  <div class="max-w-7xl mx-auto min-h-screen mt-24 py-8 sm:mt-0">
     <div class="top-[16.5rem] -right-[18px] fixed lg:hidden z-50">
       <div class="h-auto w-auto rounded-l-full  bg-resort z-50 duration-500 ease-in-out transition-all cursor-pointer" id="book_now_btn">
         <h4 class="font-rubik py-2 px-5 text-white font-semibold text-sm flex space-x-2">
@@ -238,7 +259,7 @@
         </a>
       </div>
     </div>
-    <div class="flex lg:space-x-2 flex-col lg:flex-row xl:space-x-3 2xl:space-x-4  py-8 h-auto w-full px-5 sm:px-10 lg:px-0 mt-20 sm:mt-32 md:mt-12 xl:mt-14">
+    <div class="flex lg:space-x-2 flex-col lg:flex-row xl:space-x-3 2xl:space-x-4  py-8 h-auto w-full px-5 sm:px-10 lg:px-0 sm:mt-32 md:mt-12 xl:mt-14">
       <div class="lg:mx-5 space-y-4 mb-12 w-full lg:w-2/3  h-auto">
         <div class="w-full mx-auto">
           <h5 class="text-[#333333] font-medium font-rubik text-base flex justify-center">Searching Date Range</h5>

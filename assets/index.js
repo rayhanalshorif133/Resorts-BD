@@ -11,8 +11,18 @@ $(() => {
     handleAfterSelectContainer();
     handleBookNowBtn();
     handleMobileSearchFilter();
+    mobileSearchFilterCheckAvaiabilityBtn();
 });
 
+
+const mobileSearchFilterCheckAvaiabilityBtn = () => {
+    $(".mobileSearchFilterCheckAvaiabilityBtn").click(function () {
+        $(".mobileSearchFilterCheckAvaiabilityBtn").removeClass('bg-gray-200');
+        $(".mobileSearchFilterCheckAvaiabilityBtn").find('span').removeClass('text-resort').removeClass('font-semibold');
+        $(this).toggleClass('bg-gray-200');
+        $(this).find('span').toggleClass('text-resort').toggleClass('font-semibold');
+    });
+};
 
 const handleMobileSearchFilter = () => {
     $(".mobileSearchFilterBtn").click(function () {
