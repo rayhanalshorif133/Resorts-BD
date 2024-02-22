@@ -190,13 +190,15 @@ const handleClickSelectDateRange = () => {
     function cb(start, end) {
         const startDate = moment(start).format(`DD MMM'YY`);
         const endDate = moment(end).format(`DD MMM'YY`);
+        const startDate_day = moment(start).format('dddd');
+        const endDate_day = moment(end).format('dddd');
         const startSpan = `
         <div>  
               <h5 class="text-sm text-resort-secondary-light font-rubik">Check-in</h5>
                 <div class="border-b border-resort-secondary cursor-pointer checkDateRangeInput">
                   <input id="start_date_value" name="start_date_value" class="w-fit font-rubik text-black font-bold text-sm sm:text-2xl focus:outline-none"
                     value="${startDate}" />
-                  <p class="text-xs sm:text-base text-resort-secondary font-medium font-rubik">Thursday</p>
+                  <p class="text-xs sm:text-base text-resort-secondary font-medium font-rubik">${startDate_day}</p>
                 </div>
         </div>
         <div>
@@ -204,7 +206,7 @@ const handleClickSelectDateRange = () => {
                 <div class="border-b border-resort-secondary cursor-pointer checkDateRangeInput">
                   <input id="end_date_value" name="end_date_value" class="w-fit font-rubik text-black font-bold text-sm sm:text-2xl focus:outline-none"
                     value="${endDate}" />
-                  <p class="text-xs sm:text-base text-resort-secondary font-medium font-rubik">Thursday</p>
+                  <p class="text-xs sm:text-base text-resort-secondary font-medium font-rubik">${endDate_day}</p>
                 </div>
             </div>
         `;
