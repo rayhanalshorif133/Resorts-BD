@@ -156,7 +156,7 @@
   <!-- header:end -->
   <!-- content:start -->
   <div class="max-w-7xl mx-auto min-h-screen mt-24 py-8 sm:mt-0">
-    <div class="top-[16.5rem] -right-[18px] fixed lg:hidden z-50">
+    <div class="top-360px xs:top-80 md:top-72 lg:top-64 -right-18px fixed lg:hidden z-50" id="book_now_container">
       <div class="h-auto w-auto rounded-l-full  bg-resort z-50 duration-500 ease-in-out transition-all cursor-pointer" id="book_now_btn">
         <h4 class="font-rubik py-2 px-5 text-white font-semibold text-sm flex space-x-2">
           <!-- tag icon-->
@@ -263,23 +263,38 @@
       <div class="lg:mx-5 space-y-4 mb-12 w-full lg:w-2/3  h-auto">
         <div class="w-full mx-auto">
           <h5 class="text-[#333333] font-medium font-rubik text-base flex justify-center">Searching Date Range</h5>
-          <h6 class="font-medium font-rubik text-base text-stone-500 space-x-3 flex justify-center"><span>08/02/2024
-            </span> <span>To</span> <span>09/02/2024</span></h6>
-          <button onclick="document.querySelector('.postSelectDateRange').classList.toggle('hidden')"
-            class="mx-auto justify-center py-2 px-5 bg-gradient-to-tr from-sky-400 via-sky-600 to-indigo-600 text-white group/icon font-medium font-rubik transition-all duration-300 ease-in-out text-sm block"
-            data-modal-target="select_date_range_modal" data-modal-toggle="select_date_range_modal">
-            Change <i
-              class="fas fa-exchange-alt transition-all duration-500 ease-in-out group-hover/icon:translate-x-1"></i>
+          <h6 class="font-medium font-rubik text-base text-stone-500 space-x-3 flex justify-center">
+            <span id="check_availability_search_start_date">08/02/2024</span> <span>To</span> <span id="check_availability_search_end_date">09/02/2024</span>
+          </h6>
+          <!-- change buttons -->
+          <div class="flex space-x-1.5  flex-row justify-center">
+            <button
+            class="py-px px-2 xs:px-5 w-fit bg-gradient-to-tr from-sky-400 via-sky-600 to-indigo-600 text-white group/icon font-medium font-rubik transition-all duration-300 ease-in-out text-sm block" id="check_availabilityDateRangeSearchPreviousBtn">
+             <i class="text-2xs fas fa-chevron-circle-left transition-all duration-500 ease-in-out group-hover/icon:-translate-x-1"></i>
+              <span class="text-2xs">Previous</span>
           </button>
+            <button 
+            class="py-px px-2 xs:px-5 w-fit bg-gradient-to-tr from-sky-400 via-sky-600 to-indigo-600 text-white group/icon font-medium font-rubik transition-all duration-300 ease-in-out text-sm block" id="checkAvachangeBtn"
+            data-modal-target="select_date_range_modal" data-modal-toggle="select_date_range_modal">
+            <span class="text-2xs">Change</span>
+            <i
+              class="fas text-2xs fa-exchange-alt transition-all duration-500 ease-in-out group-hover/icon:translate-x-1"></i>
+          </button>
+            <button
+            class="py-px px-2 xs:px-5 w-fit bg-gradient-to-tr from-sky-400 via-sky-600 to-indigo-600 text-white group/icon font-medium font-rubik transition-all duration-300 ease-in-out text-sm block" id="check_availabilityDateRangeSearchNextBtn">
+            <span class="text-2xs">Next</span> <i
+              class="fas text-2xs fa-chevron-circle-right transition-all duration-500 ease-in-out group-hover/icon:translate-x-1"></i>
+          </button>
+          </div>
         </div>
         <div class="w-full mx-auto justify-center postSelectDateRange hidden">
           <div
             class="w-full mx-auto justify-center py-2 flex flex-col lg:flex-row px-10 bg-white shadow-[0_0_8px_rgba(0,0,0,0.2)]">
-            <div id="reportrange" class="w-full flex mx-auto justify-center">
+            <div id="check_availabilityDateRangeSearch" class="w-full flex mx-auto justify-center">
               <span class="flex space-y-4 lg:space-y-0 lg:space-x-4 flex-col lg:flex-row"></span>
             </div>
-            <button onclick="document.querySelector('.postSelectDateRange').classList.toggle('hidden')"
-              class="mx-auto justify-center h-fit w-full rounded-md my-5 items-center py-2 px-5 bg-gradient-to-br from-sky-400 via-sky-600 to-indigo-600 text-white group/icon font-medium font-rubik transition-all duration-300 ease-in-out text-sm block">
+            <button
+              class="mx-auto justify-center h-fit w-full rounded-md my-5 items-center py-1 px-5 bg-gradient-to-br from-sky-400 via-sky-600 to-indigo-600 text-white group/icon font-medium font-rubik transition-all duration-300 ease-in-out text-2xs block" id="check_availabilityDateRangeSearchBtn">
               Check Availability
             </button>
           </div>
