@@ -12,8 +12,16 @@ $(() => {
     handleBookNowBtn();
     handleMobileSearchFilter();
     mobileSearchFilterCheckAvaiabilityBtn();
+    handleCheckAvailabilitySelectDateRange();
+    handleCheckAvachangeBtn();
 });
 
+
+const handleCheckAvachangeBtn = () => {
+    $("#checkAvachangeBtn").click(function () {
+        document.querySelector('.postSelectDateRange').classList.toggle('hidden');
+    });
+};
 
 const mobileSearchFilterCheckAvaiabilityBtn = () => {
     $(".mobileSearchFilterCheckAvaiabilityBtn").click(function () {
@@ -185,8 +193,6 @@ const handleSlider = () => {
 const handleClickSelectDateRange = () => {
     const currentDate = moment().format('MM/DD/YYYY');
     const after2Days = moment().add(2, 'days').format('MM/DD/YYYY');
-
-
     function cb(start, end) {
         const startDate = moment(start).format(`DD MMM'YY`);
         const endDate = moment(end).format(`DD MMM'YY`);
@@ -213,15 +219,75 @@ const handleClickSelectDateRange = () => {
         $('#reportrange span').html(startSpan);
         // $(document).find('.applyBtn').trigger('click');
     }
-
     $('#reportrange').daterangepicker({
         currentDate: currentDate,
         after2Days: after2Days,
         // remove appy btn
         autoApply: true,
     }, cb);
-
     cb(currentDate, after2Days);
+};
+
+const handleCheckAvailabilitySelectDateRange = () => {
+    const currentDate = moment().format('MM/DD/YYYY');
+    const after2Days = moment().add(2, 'days').format('MM/DD/YYYY');
+    var startSearchDate = currentDate;
+    var endSearchDate = after2Days;
+    function cb(start, end) {
+        const startDate = moment(start).format(`DD MMM'YY`);
+        const endDate = moment(end).format(`DD MMM'YY`);
+        const startDate_day = moment(start).format('dddd');
+        const endDate_day = moment(end).format('dddd');
+        startSearchDate = moment(start).format('DD/MM/YYYY');
+        endSearchDate = moment(end).format('DD/MM/YYYY');
+        const startSpan = `
+        <div>  
+              <h5 class="text-sm text-resort-secondary-light font-rubik">Check-in</h5>
+                <div class="border-b border-resort-secondary cursor-pointer checkDateRangeInput">
+                  <input id="start_date_value" name="start_date_value" class="w-fit font-rubik text-black font-bold text-sm sm:text-2xl focus:outline-none"
+                    value="${startDate}" />
+                  <p class="text-xs sm:text-base text-resort-secondary font-medium font-rubik">${startDate_day}</p>
+                </div>
+        </div>
+        <div>
+                <h5 class="text-sm text-resort-secondary-light font-rubik">Check-out</h5>
+                <div class="border-b border-resort-secondary cursor-pointer checkDateRangeInput">
+                  <input id="end_date_value" name="end_date_value" class="w-fit font-rubik text-black font-bold text-sm sm:text-2xl focus:outline-none"
+                    value="${endDate}" />
+                  <p class="text-xs sm:text-base text-resort-secondary font-medium font-rubik">${endDate_day}</p>
+                </div>
+            </div>
+        `;
+        $('#check_availabilityDateRangeSearch span').html(startSpan);
+    }
+    $('#check_availabilityDateRangeSearch').daterangepicker({
+        currentDate: currentDate,
+        after2Days: after2Days,
+        // remove appy btn
+        autoApply: true,
+    }, cb);
+    cb(currentDate, after2Days);
+
+    $("#check_availabilityDateRangeSearchBtn").click(function () {
+        $("#check_availability_search_start_date").text(startSearchDate);
+        $("#check_availability_search_end_date").text(endSearchDate);
+        document.querySelector('.postSelectDateRange').classList.toggle('hidden');
+
+    });
+
+    $("#check_availabilityDateRangeSearchNextBtn").click(function () {
+        startSearchDate = moment(startSearchDate, 'DD/MM/YYYY').add(1, 'days').format('DD/MM/YYYY');
+        endSearchDate = moment(endSearchDate, 'DD/MM/YYYY').add(1, 'days').format('DD/MM/YYYY');
+        $("#check_availability_search_start_date").text(startSearchDate);
+        $("#check_availability_search_end_date").text(endSearchDate);
+    });
+
+    $("#check_availabilityDateRangeSearchPreviousBtn").click(function () {
+        startSearchDate = moment(startSearchDate, 'DD/MM/YYYY').subtract(1, 'days').format('DD/MM/YYYY');
+        endSearchDate = moment(endSearchDate, 'DD/MM/YYYY').subtract(1, 'days').format('DD/MM/YYYY');
+        $("#check_availability_search_start_date").text(startSearchDate);
+        $("#check_availability_search_end_date").text(endSearchDate);
+    });
 
 };
 
