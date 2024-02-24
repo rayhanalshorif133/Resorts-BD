@@ -19,6 +19,7 @@ $(() => {
 
 const handleCheckAvachangeBtn = () => {
     $("#checkAvachangeBtn").click(function () {
+        $("#book_now_container").toggleClass('top-290px').toggleClass('top-520px');
         document.querySelector('.postSelectDateRange').classList.toggle('hidden');
     });
 };
