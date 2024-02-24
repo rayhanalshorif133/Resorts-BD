@@ -37,7 +37,7 @@ module.exports = {
       },
       inset: {
         '520px': '520px',
-        '360px': '360px',
+        '290px': '290px',
         '18px': '18px',
       },
     }
