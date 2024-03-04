@@ -2990,10 +2990,6 @@ input[type='number']::-webkit-outer-spin-button {
     margin-top: 8rem;
   }
 
-  .sm\:mt-2 {
-    margin-top: 0.5rem;
-  }
-
   .sm\:block {
     display: block;
   }
@@ -3350,10 +3346,6 @@ input[type='number']::-webkit-outer-spin-button {
 
   .xl\:mt-14 {
     margin-top: 3.5rem;
-  }
-
-  .xl\:mt-2 {
-    margin-top: 0.5rem;
   }
 
   .xl\:block {
