@@ -2,6 +2,7 @@ $(() => {
     handleAutoInculdeFiles();
     handleClickSearchDestination();
     handleClickSelectDateRange();
+    handleBoatsCheckInOutRange();
     handleSlider();
     handleSearchSideBarItems();
     checkBoxHandler();
@@ -196,6 +197,50 @@ const handleClickSelectDateRange = () => {
     const after2Days = moment().add(2, 'days').format('MM/DD/YYYY');
     function cb(start, end) {
         const startDate = moment(start).format(`DD MMM'YY`);
+        const sendStartDate = moment(start).format(`YYYY-mm-dd`);
+        const endDate = moment(end).format(`DD MMM'YY`);
+        const sendEndDate = moment(end).format(`YYYY-mm-dd`);
+        const startDate_day = moment(start).format('dddd');
+        const endDate_day = moment(end).format('dddd');
+        // YYYY-mm-dd
+        const startSpan = `
+        <div>  
+              <h5 class="text-sm text-resort-secondary-light font-rubik">Check-in</h5>
+                <div class="border-b border-resort-secondary cursor-pointer checkDateRangeInput">
+                    <input name="start_date_value" value="${sendStartDate}"/>
+                  <input id="start_date_value" class="w-fit font-rubik text-black font-bold text-sm sm:text-2xl focus:outline-none"
+                    value="${startDate}" />
+                  <p class="text-xs sm:text-base text-resort-secondary font-medium font-rubik">${startDate_day}</p>
+                </div>
+        </div>
+        <div>
+                <h5 class="text-sm text-resort-secondary-light font-rubik">Check-out</h5>
+                <div class="border-b border-resort-secondary cursor-pointer checkDateRangeInput">
+                    <input name="end_date_value" value="${sendEndDate}"/>
+                  <input id="end_date_value" class="w-fit font-rubik text-black font-bold text-sm sm:text-2xl focus:outline-none"
+                    value="${endDate}" />
+                  <p class="text-xs sm:text-base text-resort-secondary font-medium font-rubik">${endDate_day}</p>
+                </div>
+            </div>
+        `;
+        $('#reportrange span').html(startSpan);
+        // $(document).find('.applyBtn').trigger('click');
+    }
+    $('#reportrange').daterangepicker({
+        currentDate: currentDate,
+        after2Days: after2Days,
+        // remove appy btn
+        autoApply: true,
+    }, cb);
+    cb(currentDate, after2Days);
+};
+
+const handleBoatsCheckInOutRange = () => {
+    console.log('handleBoatsCheckInOutRange')
+    const currentDate = moment().format('MM/DD/YYYY');
+    const after2Days = moment().add(2, 'days').format('MM/DD/YYYY');
+    function cb(start, end) {
+        const startDate = moment(start).format(`DD MMM'YY`);
         const endDate = moment(end).format(`DD MMM'YY`);
         const startDate_day = moment(start).format('dddd');
         const endDate_day = moment(end).format('dddd');
@@ -217,10 +262,10 @@ const handleClickSelectDateRange = () => {
                 </div>
             </div>
         `;
-        $('#reportrange span').html(startSpan);
+        $('#boatsCheckInOutRange span').html(startSpan);
         // $(document).find('.applyBtn').trigger('click');
     }
-    $('#reportrange').daterangepicker({
+    $('#boatsCheckInOutRange').daterangepicker({
         currentDate: currentDate,
         after2Days: after2Days,
         // remove appy btn
