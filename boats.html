@@ -123,7 +123,7 @@
       <div class="col-span-12 sm:mx-5 md:col-span-5 mt-16 md:mt-0">
         <div
           class="bg-white xl:fixed xl:top-20 xl:w-[30rem] h-auto pb-3 md:pb-0 md:h-full rounded-md border-l-2 mx-auto border-gray-300 custom_box-shadow">
-          <form action="./search.html"
+          <form action="./boats.html"
             class="mx-auto w-full px-5 py-3 transition-all duration-500 ease-in-out search_destination_main overflow-hidden">
             <h2 class="py-2 text-lg text-[#333333] font-medium tracking-wide font-rubik">Book on Bangladesh's Largest
               Hotel</h2>
@@ -140,10 +140,15 @@
               </div>
               <div>
                 <h5 class="text-sm text-resort-secondary-light font-rubik">Type</h5>
-                <input type="radio" name="boat_type" id="boat_type_1" value="package">
-                <label for="boat_type_1" class="text-sm font-rubik">Package</label>
-                <input type="radio" name="boat_type" id="boat_type_2" value="seat">
-                <label for="boat_type_2" class="text-sm font-rubik">Full Boat</label>
+                <label class="inline-flex items-center">
+                  <input type="radio" class="form-radio text-indigo-600" name="boat_type" value="package">
+                  <span class="ml-2 cursor-pointer">Package</span>
+                </label>
+                <label class="inline-flex items-center ml-6">
+                  <input type="radio" class="form-radio text-indigo-600" name="boat_type" value="full_boat">
+                  <span class="ml-2 cursor-pointer">Full Boat</span>
+                </label>
+                <div class="h-[1px] bg-gray-500 w-full"></div>
               </div>
             </div>
             <div class="flex w-full justify-end mt-4 sm:mt-14">
