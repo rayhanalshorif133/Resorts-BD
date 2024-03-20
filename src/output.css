@@ -2795,6 +2795,14 @@ input[type='number']::-webkit-outer-spin-button {
   width: 2.5rem;
 }
 
+.group:hover .group-hover\:w-14 {
+  width: 3.5rem;
+}
+
+.group:hover .group-hover\:w-12 {
+  width: 3rem;
+}
+
 .group\/icon:hover .group-hover\/icon\:-translate-x-1 {
   --tw-translate-x: -0.25rem;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -3182,20 +3190,12 @@ input[type='number']::-webkit-outer-spin-button {
     width: 18rem;
   }
 
-  .md\:w-\[215px\] {
-    width: 215px;
-  }
-
-  .md\:w-1\/2 {
-    width: 50%;
-  }
-
-  .md\:w-80 {
-    width: 20rem;
-  }
-
   .md\:w-96 {
     width: 24rem;
+  }
+
+  .md\:w-\[215px\] {
+    width: 215px;
   }
 
   .md\:grid-cols-12 {
