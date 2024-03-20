@@ -2795,12 +2795,12 @@ input[type='number']::-webkit-outer-spin-button {
   width: 2.5rem;
 }
 
-.group:hover .group-hover\:w-14 {
-  width: 3.5rem;
-}
-
 .group:hover .group-hover\:w-12 {
   width: 3rem;
+}
+
+.group:hover .group-hover\:w-14 {
+  width: 3.5rem;
 }
 
 .group\/icon:hover .group-hover\/icon\:-translate-x-1 {
