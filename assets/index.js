@@ -207,7 +207,7 @@ const handleClickSelectDateRange = () => {
         <div>  
               <h5 class="text-sm text-resort-secondary-light font-rubik">Check-in</h5>
                 <div class="border-b border-resort-secondary cursor-pointer checkDateRangeInput">
-                    <input name="start_date_value" value="${sendStartDate}"/>
+                    <input name="start_date_value" class="hidden" value="${sendStartDate}"/>
                   <input id="start_date_value" class="w-fit font-rubik text-black font-bold text-sm sm:text-2xl focus:outline-none"
                     value="${startDate}" />
                   <p class="text-xs sm:text-base text-resort-secondary font-medium font-rubik">${startDate_day}</p>
@@ -216,7 +216,7 @@ const handleClickSelectDateRange = () => {
         <div>
                 <h5 class="text-sm text-resort-secondary-light font-rubik">Check-out</h5>
                 <div class="border-b border-resort-secondary cursor-pointer checkDateRangeInput">
-                    <input name="end_date_value" value="${sendEndDate}"/>
+                    <input name="end_date_value" class="hidden" value="${sendEndDate}"/>
                   <input id="end_date_value" class="w-fit font-rubik text-black font-bold text-sm sm:text-2xl focus:outline-none"
                     value="${endDate}" />
                   <p class="text-xs sm:text-base text-resort-secondary font-medium font-rubik">${endDate_day}</p>
