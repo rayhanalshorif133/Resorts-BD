@@ -14,7 +14,6 @@
 
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
   <link href="./src/output.css" rel="stylesheet">
-  <!-- <script src="https://cdn.tailwindcss.com"></script> -->
   <title>Resorts BD :: Home</title>
 </head>
 
@@ -164,7 +163,7 @@
                 class="search_destination ring-0 active:ring-0 border-none focus:border-none focus:outline-none focus:ring-0 w-full border-transparent  px-2 py-2 mt-1 font-semibold text-xl text-[#000000]"
                 placeholder="Enter a destination">
               <div class="h-[1px] bg-gray-300 w-full"></div>
-              <div class="space-y-3 mt-5 destination_option_box">
+              <div class="space-y-3 mt-5 destination_option_box overflow-y-auto" style="height: 10rem;">
                 <div class="py-3 bg-[#FAFBFD] px-2 rounded-sm cursor-pointer hover:bg-[#f0f5ff] destination_option">
                   <option value="Bandarban" class="text-sm text-gray-600 font-rubik">Bandarban</option>
                 </div>
@@ -429,6 +428,10 @@
             <h3 class="font-rubik text-resort font-bold text-xl">Payment Methods</h3>
             <!-- overflow-scroll hide_scrollbar text-5xl -->
             <div class="grid grid-cols-6 xl:grid-cols-10 xxs:gap-2 sm:gap-1 gap-1">
+              <div class="group/icon cursor-pointer">
+                <img class="h-full w-full block group-hover/icon:hidden" src="./assets/images/bkash_normal.png" alt="bkash"/>
+                <img class="h-full w-full hidden group-hover/icon:block" src="./assets/images/bkash_color.png" alt="bkash"/>
+              </div>
               <div class="group/icon cursor-pointer"><i
                   class="fa-brands text-resort-secondary-light fa-cc-visa text-3xl sm:text-4xl lg:text-5xl group-hover/icon:text-[#212675]"></i>
               </div>
