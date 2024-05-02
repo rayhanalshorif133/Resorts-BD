@@ -1358,6 +1358,10 @@ video {
   height: 2.5rem;
 }
 
+.h-12 {
+  height: 3rem;
+}
+
 .h-2 {
   height: 0.5rem;
 }
@@ -3032,8 +3036,16 @@ input[type='number']::-webkit-outer-spin-button {
     display: none;
   }
 
+  .sm\:h-24 {
+    height: 6rem;
+  }
+
   .sm\:h-\[300px\] {
     height: 300px;
+  }
+
+  .sm\:h-full {
+    height: 100%;
   }
 
   .sm\:w-2\/5 {
