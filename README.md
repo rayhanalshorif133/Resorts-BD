@@ -1,1 +1,1 @@
-LIVE: https://rayhanalshorif133.github.io/Resorts-BD
+LIVE: https://resortsbd.com
